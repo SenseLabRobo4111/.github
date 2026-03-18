@@ -78,6 +78,24 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
 
 <br/>
 
+<table style="border: 1px solid var(--color-border-muted); background-color: var(--color-canvas-subtle); border-radius: 16px; padding: 20px; width: 95%; margin: auto; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);">
+  <tr>
+    <td align="center" width="200px" valign="top" style="border: none; padding-right: 20px;">
+      <img src="./fig/rongzhao.jpg" style="width: 100%; max-width: 180px; height: auto; border-radius: 16px; border: 3px solid #660099; padding: 3px; box-shadow: 0 0 15px rgba(102, 0, 153, 0.4); display: block;"/>
+    </td>
+    <td valign="top" style="border: none;">
+      <h2 style="margin-top: 0; margin-bottom: 5px;">Dr. Rong Zhao</h2>
+      <b>Postdoctoral Researcher / Lecturer</b><br>
+      Tsinghua University (Postdoc) &amp; North University of China (Lecturer)<br>
+      <br>
+      🧠 <b>Research Focus:</b> Robot Navigation<br>
+      ✉️ <a href="mailto:ZhaoRoy4107@gmail.com">Email Contact</a>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
 ### Core Members & Researchers
 
 <table align="center" style="border: none; width: 100%; margin-top: 20px;">
