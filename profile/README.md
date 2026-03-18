@@ -124,8 +124,8 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
       <strong style="font-size: 1.1em;">Haojia Gao</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
         Master Student<br/>
-         Tsinghua SIGS, Tsinghua University<br/>
-        <span style="color: #660099; font-weight: bold;">Focus:</span> Embodied Intelligence 
+        Tsinghua SIGS, Tsinghua University<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Embodied Intelligence
         <div style="margin-top: 12px; font-size: 1em;">
           <a href="mailto:intelligent@gaohaojia.top" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
           <span style="color: #ccc;">|</span>
@@ -164,8 +164,8 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
       <br/>
       <strong style="font-size: 1.1em;">Mingkai Liu</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-         Master Student<br/>
-         School of Software & Microelectronics, Peking University<br/>
+        Master Student<br/>
+        School of Software & Microelectronics, Peking University<br/>
         <span style="color: #660099; font-weight: bold;">Focus:</span> 3D Reconstruction & Localization
         <div style="margin-top: 12px; font-size: 1em;">
           <a href="mailto:qian.zhang@email.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
@@ -176,54 +176,166 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
     </td>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/studen-2.jpg" style="width: 200px; height: auto; display: block;" />
+          <img src="./fig/yunchao-mo.jpeg" style="width: 200px; height: auto; display: block;" />
       </div>
       <br/>
-      <strong style="font-size: 1.1em;">Moyun Chao</strong><br/>
+      <strong style="font-size: 1.1em;">Yunchao Mo</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
         Master Student<br/>
         College of Computer Science and Artificial Intelligence, Southwest Minzu University<br/>
-        <span style="color: #660099; font-weight: bold;">Focus:</span> Reinforcement learning
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Reinforcement Learning
         <div style="margin-top: 12px; font-size: 1em;">
           <a href="mailto:1197829412@qq.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
           <span style="color: #ccc;">|</span>
-          <a href="#" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Personal Homepage">🌐 Web</a>
+          <a href="https://github.com/MoYunchao" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
         </div>
       </div>
     </td>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/studen-3.png" style="width: 200px; height: auto; display: block;" />
+          <img src="./fig/hui-geng.jpeg" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Hui Geng</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Master Student<br/>
+        School of Communication and Information Engineering, Chongqing University of Posts and Telecommunications<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Multi-Robot Exploration
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:1759550479@qq.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="https://github.com/huishao-hub" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
+        </div>
+      </div>
+    </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/chengkui-wang.jpeg" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Chengkui Wang</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Master Student<br/>
+        Computer Science and Technology, Tiangong University<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> 3D Reconstruction & Autonomous Driving Simulation
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:2996679235@qq.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="https://github.com/wangchengkui" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+### Undergraduate Interns
+
+<table align="center" style="border: none; width: 100%; margin-top: 20px;">
+  <tr>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/yifan-zhu.jpeg" style="width: 200px; height: auto; display: block;" />
       </div>
       <br/>
       <strong style="font-size: 1.1em;">Yifan Zhu</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-        Master Student<br/>
-         Tsinghua SIGS, Tsinghua University<br/>
-        <span style="color: #660099; font-weight: bold;">Focus:</span> Embodied Intelligence 
+        Undergraduate<br/>
+        Xiuzhong College, Tsinghua University<br/>
         <div style="margin-top: 12px; font-size: 1em;">
-          <a href="mailto:intelligent@gaohaojia.top" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <a href="mailto:ivanzhu708@gmail.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
           <span style="color: #ccc;">|</span>
-          <a href="https://gaohaojia.github.io/index.html" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Personal Homepage">🌐 Web</a>
+          <a href="https://github.com/JJchess" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
         </div>
       </div>
     </td>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/studen-4.png" style="width: 200px; height: auto; display: block;" />
+          <img src="./fig/yuyang-song.jpeg" style="width: 200px; height: auto; display: block;" />
       </div>
       <br/>
-      <strong style="font-size: 1.1em;">Weihao Shan</strong><br/>
+      <strong style="font-size: 1.1em;">Yuyang Song</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-        Master Student<br/>
-        Department of E.E., Tsinghua University<br/>
-        <span style="color: #660099; font-weight: bold;">Focus:</span> Robotic Chips Design
+        Undergraduate<br/>
+        Information and Electronics, Beijing Institute of Technology<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Robotics
         <div style="margin-top: 12px; font-size: 1em;">
-          <a href="mailto:student@email.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <a href="mailto:s70735526@163.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
           <span style="color: #ccc;">|</span>
-          <a href="#" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Personal Homepage">🌐 Web</a>
+          <a href="https://github.com/SUNNYsyy2005" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
         </div>
       </div>
+    </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/jiajun-sun.jpeg" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Jiajun Sun</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Undergraduate<br/>
+        School of Mechanical and Electrical Engineering, Shenzhen University<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Robotics
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:1924916921@qq.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="mailto:Jiajuns757@gmail.com" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
+        </div>
+      </div>
+    </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/shanxu-zhao.jpeg" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Shanxu Zhao</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Undergraduate<br/>
+        Department of Electronic Engineering, Tsinghua University<br/>
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:zhaosx23@mails.tsinghua.edu.cn" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="https://github.com/boundless323" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/yannong-wen.jpeg" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Yannong Wen</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Undergraduate (Senior)<br/>
+        Fan Gongxiu Honors College, Beijing University of Technology<br/>
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:amandawyn2023@gmail.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="https://github.com/amandawyn" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
+        </div>
+      </div>
+    </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/hoiian-au.jpeg" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Hoi Ian Au</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Undergraduate<br/>
+        Department of Electronic Engineering, Tsinghua University<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Robotics & Agentic Systems
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:qke22@mails.tsinghua.edu.cn" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="https://github.com/HoiIanAu" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
+        </div>
+      </div>
+    </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+    </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
     </td>
   </tr>
 </table>
