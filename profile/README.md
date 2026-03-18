@@ -491,7 +491,7 @@ We leverage cutting-edge tools to power our research.
   <h3>Innovating at Tsinghua University.</h3>
   <p>We are always looking for passionate collaborators and students.</p>
   <p>
-    <a href="mailto:contact@senselab.thu.edu.cn">✉️ Contact Us</a> | 
+    <a href="mailto:qiaofei@tsinghua.edu.cn">✉️ Contact Us</a> | 
     <a href="#">📄 Publications</a> | 
     <a href="https://github.com/SenseLabRobo">🐙 GitHub Profile</a>
   </button>
