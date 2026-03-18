@@ -17,9 +17,12 @@
     --text: #e6edf3;
     --text-muted: #8b949e;
     --border: #30363d;
+    --accent-blue: #58a6ff;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
 
   body {
     font-family: 'Inter', -apple-system, sans-serif;
@@ -27,11 +30,58 @@
     color: var(--text);
     line-height: 1.6;
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-  /* Hero */
+  /* ───── Scroll-reveal animation ───── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ───── Staggered children ───── */
+  .stagger-children > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .stagger-children.visible > *:nth-child(1) { transition-delay: 0.05s; }
+  .stagger-children.visible > *:nth-child(2) { transition-delay: 0.12s; }
+  .stagger-children.visible > *:nth-child(3) { transition-delay: 0.19s; }
+  .stagger-children.visible > *:nth-child(4) { transition-delay: 0.26s; }
+  .stagger-children.visible > *:nth-child(5) { transition-delay: 0.33s; }
+  .stagger-children.visible > *:nth-child(6) { transition-delay: 0.40s; }
+  .stagger-children.visible > *:nth-child(7) { transition-delay: 0.47s; }
+  .stagger-children.visible > *:nth-child(8) { transition-delay: 0.54s; }
+  .stagger-children.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ───── Animated gradient divider ───── */
+  hr.divider {
+    border: none;
+    height: 2px;
+    margin: 0;
+    background: linear-gradient(90deg, transparent, var(--purple), var(--accent-blue), var(--purple), transparent);
+    background-size: 200% 100%;
+    animation: shimmer-line 4s ease-in-out infinite;
+  }
+  @keyframes shimmer-line {
+    0%, 100% { background-position: 200% 0; }
+    50% { background-position: -200% 0; }
+  }
+
+  /* ───── Hero ───── */
   .hero {
     text-align: center;
     padding: 60px 0 40px;
@@ -40,12 +90,29 @@
     font-size: 2.8em;
     font-weight: 800;
     letter-spacing: -1px;
+    animation: hero-text-in 1s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
-  .hero h1 .accent { color: var(--purple); }
+  @keyframes hero-text-in {
+    from { opacity: 0; transform: translateY(-20px) scale(0.96); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .hero h1 .accent {
+    background: linear-gradient(135deg, var(--purple), #a855f7, var(--accent-blue));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% center; }
+    50% { background-position: 200% center; }
+  }
   .hero .subtitle {
     font-size: 1.1em;
     color: var(--text-muted);
     margin-top: 6px;
+    animation: hero-text-in 1s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
   .hero-img {
     margin: 36px auto;
@@ -54,16 +121,38 @@
     border-radius: 14px;
     border: 2px solid var(--border);
     box-shadow: 0 12px 40px rgba(102, 0, 153, 0.25);
+    animation: hero-img-in 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transition: box-shadow 0.4s, transform 0.4s;
   }
-  .badges { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-  .badges img { height: 28px; }
+  .hero-img:hover {
+    box-shadow: 0 20px 60px rgba(102, 0, 153, 0.4);
+    transform: scale(1.01);
+  }
+  @keyframes hero-img-in {
+    from { opacity: 0; transform: translateY(30px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .badges {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: hero-text-in 1s 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .badges img {
+    height: 28px;
+    transition: transform 0.2s;
+  }
+  .badges img:hover { transform: scale(1.08); }
 
-  /* Sections */
+  /* ───── Sections ───── */
   section { padding: 50px 0; }
   .section-title {
     font-size: 1.6em;
     font-weight: 700;
     margin-bottom: 10px;
+    position: relative;
   }
   .section-sub {
     color: var(--text-muted);
@@ -71,14 +160,7 @@
     font-size: 1.05em;
   }
 
-  hr.divider {
-    border: none;
-    height: 1px;
-    background: var(--border);
-    margin: 0;
-  }
-
-  /* Pillars */
+  /* ───── Pillars ───── */
   .pillars {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -91,17 +173,26 @@
     border-radius: 14px;
     padding: 32px 24px;
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.35s,
+                border-color 0.35s;
   }
   .pillar:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(102, 0, 153, 0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(102, 0, 153, 0.25);
+    border-color: var(--purple);
   }
-  .pillar .icon { font-size: 2.4em; margin-bottom: 14px; }
+  .pillar .icon {
+    font-size: 2.4em;
+    margin-bottom: 14px;
+    display: inline-block;
+    transition: transform 0.35s;
+  }
+  .pillar:hover .icon { transform: scale(1.2) rotate(-5deg); }
   .pillar h3 { font-size: 1.1em; margin-bottom: 10px; }
   .pillar p { color: var(--text-muted); font-size: 0.9em; }
 
-  /* PI Card */
+  /* ───── PI Card ───── */
   .pi-card {
     display: flex;
     gap: 28px;
@@ -111,6 +202,11 @@
     padding: 28px;
     margin-bottom: 40px;
     align-items: flex-start;
+    transition: box-shadow 0.4s, border-color 0.4s;
+  }
+  .pi-card:hover {
+    box-shadow: 0 8px 32px rgba(102, 0, 153, 0.2);
+    border-color: rgba(102, 0, 153, 0.4);
   }
   .pi-card img {
     width: 160px;
@@ -119,15 +215,20 @@
     border: 3px solid var(--purple);
     box-shadow: 0 0 20px var(--purple-glow);
     flex-shrink: 0;
+    transition: box-shadow 0.4s, transform 0.4s;
+  }
+  .pi-card:hover img {
+    box-shadow: 0 0 30px var(--purple-glow), 0 0 60px rgba(102, 0, 153, 0.15);
+    transform: scale(1.03);
   }
   .pi-card h2 { font-size: 1.5em; margin-bottom: 4px; }
   .pi-card .role { color: var(--purple); font-weight: 600; font-size: 0.95em; }
   .pi-card .dept { color: var(--text-muted); margin: 6px 0 14px; font-size: 0.9em; }
   .pi-card .details { font-size: 0.9em; color: var(--text-muted); line-height: 1.8; }
-  .pi-card a { color: var(--purple); text-decoration: none; }
-  .pi-card a:hover { text-decoration: underline; }
+  .pi-card a { color: var(--purple); text-decoration: none; transition: color 0.2s; }
+  .pi-card a:hover { text-decoration: underline; color: #a855f7; }
 
-  /* Team grid */
+  /* ───── Team grid ───── */
   .team-category {
     font-size: 1.2em;
     font-weight: 600;
@@ -147,11 +248,14 @@
     border-radius: 14px;
     padding: 24px 16px 20px;
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.35s,
+                border-color 0.35s;
   }
   .member:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(102, 0, 153, 0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(102, 0, 153, 0.25);
+    border-color: rgba(102, 0, 153, 0.4);
     background: var(--bg-card-hover);
   }
   .member .avatar {
@@ -165,6 +269,12 @@
     box-shadow: 0 6px 20px var(--purple-glow);
     background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
                 linear-gradient(135deg, var(--purple), #a855f7) border-box;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.4s;
+  }
+  .member:hover .avatar {
+    transform: scale(1.08);
+    box-shadow: 0 8px 30px var(--purple-glow), 0 0 40px rgba(102, 0, 153, 0.15);
   }
   .member .name {
     font-weight: 600;
@@ -188,10 +298,11 @@
     color: var(--purple);
     text-decoration: none;
     margin: 0 6px;
+    transition: color 0.2s;
   }
-  .member .links a:hover { text-decoration: underline; }
+  .member .links a:hover { text-decoration: underline; color: #a855f7; }
 
-  /* Publications */
+  /* ───── Publications ───── */
   .pub-year {
     font-size: 1.1em;
     font-weight: 600;
@@ -202,15 +313,18 @@
   .pub {
     background: var(--bg-card);
     border: 1px solid var(--border);
+    border-left: 3px solid transparent;
     border-radius: 12px;
     padding: 18px 22px;
     margin-bottom: 12px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.3s,
+                border-left-color 0.3s;
   }
   .pub:hover {
-    transform: translateX(4px);
-    box-shadow: -4px 0 16px rgba(102, 0, 153, 0.2);
-    border-left: 3px solid var(--purple);
+    transform: translateX(6px);
+    box-shadow: -4px 0 20px rgba(102, 0, 153, 0.2);
+    border-left-color: var(--purple);
   }
   .pub .pub-title {
     font-weight: 600;
@@ -221,6 +335,7 @@
   .pub .pub-title a {
     color: var(--text);
     text-decoration: none;
+    transition: color 0.2s;
   }
   .pub .pub-title a:hover { color: var(--purple); }
   .pub .pub-authors {
@@ -249,7 +364,7 @@
   .pub .badge-cite { background: rgba(102, 0, 153, 0.15); color: #a855f7; }
   .pub .badge-review { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
 
-  /* Tech stack */
+  /* ───── Tech stack ───── */
   .tech-row {
     margin-bottom: 20px;
   }
@@ -263,14 +378,20 @@
     flex-wrap: wrap;
     gap: 8px;
   }
+  .tech-row .badges-row img {
+    transition: transform 0.2s;
+  }
+  .tech-row .badges-row img:hover {
+    transform: scale(1.1);
+  }
 
-  /* Affiliations */
+  /* ───── Affiliations ───── */
   .affiliations {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 48px;
-    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: nowrap;
     padding: 20px 0;
   }
   .affiliations a {
@@ -278,23 +399,26 @@
     align-items: center;
     justify-content: center;
     background: #fff;
-    border-radius: 14px;
-    padding: 16px 24px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.35s;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 1 auto;
+    min-width: 0;
   }
   .affiliations a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(102, 0, 153, 0.2);
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 10px 30px rgba(102, 0, 153, 0.25);
   }
   .affiliations img {
-    height: 44px;
-    max-width: 140px;
+    height: 38px;
+    max-width: 120px;
     width: auto;
     object-fit: contain;
   }
 
-  /* Footer */
+  /* ───── Footer ───── */
   footer {
     text-align: center;
     padding: 40px 0;
@@ -303,14 +427,57 @@
     border-top: 1px solid var(--border);
     margin-top: 20px;
   }
-  footer a { color: var(--purple); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+  footer a { color: var(--purple); text-decoration: none; transition: color 0.2s; }
+  footer a:hover { text-decoration: underline; color: #a855f7; }
 
+  /* ───── Floating particles background ───── */
+  .particles {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--purple);
+    border-radius: 50%;
+    opacity: 0;
+    animation: float-particle linear infinite;
+  }
+  @keyframes float-particle {
+    0%   { opacity: 0; transform: translateY(100vh) scale(0); }
+    10%  { opacity: 0.6; }
+    90%  { opacity: 0.6; }
+    100% { opacity: 0; transform: translateY(-10vh) scale(1); }
+  }
+
+  /* ───── Glow pulse on section titles ───── */
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 8px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--purple), #a855f7);
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.6; width: 50px; }
+    50% { opacity: 1; width: 80px; }
+  }
+
+  /* ───── Responsive ───── */
   @media (max-width: 768px) {
     .pillars { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: repeat(2, 1fr); }
     .pi-card { flex-direction: column; align-items: center; text-align: center; }
     .hero h1 { font-size: 2em; }
+    .affiliations { flex-wrap: wrap; gap: 12px; }
   }
   @media (max-width: 480px) {
     .team-grid { grid-template-columns: 1fr; }
@@ -318,6 +485,9 @@
 </style>
 </head>
 <body>
+
+<!-- Floating particles -->
+<div class="particles" id="particles"></div>
 
 <!-- Hero -->
 <div class="container">
@@ -342,7 +512,7 @@
       At <strong>SenseLabRobo</strong>, we define the frontier of <strong>Embodied AI</strong>. We don't just build robots; we endow them with the ability to <em>sense</em> complex environments, <em>understand</em> semantic contexts, and <em>act</em> with agility and precision. Our research fuses multi-modal perception with advanced control theories to create intelligent machines that operate in the real world.
     </p>
 
-    <div class="pillars">
+    <div class="pillars stagger-children reveal">
       <div class="pillar">
         <div class="icon">👁️</div>
         <h3>Multi-Modal Perception</h3>
@@ -371,7 +541,7 @@
     <p class="section-sub">Driven by curiosity, united by code. We are a diverse group of researchers at Tsinghua.</p>
 
     <!-- PI -->
-    <div class="pi-card">
+    <div class="pi-card reveal">
       <img src="./fig/prof-pi.jpg" alt="Dr. Fei Qiao" />
       <div>
         <h2>Dr. Fei Qiao</h2>
@@ -386,7 +556,7 @@
     </div>
 
     <!-- Postdoc -->
-    <div class="pi-card">
+    <div class="pi-card reveal">
       <img src="./fig/rongzhao.jpg" alt="Dr. Rong Zhao" />
       <div>
         <h2>Dr. Rong Zhao</h2>
@@ -401,7 +571,7 @@
 
     <!-- Core Members -->
     <div class="team-category">Core Members & Researchers</div>
-    <div class="team-grid">
+    <div class="team-grid stagger-children reveal">
       <div class="member">
         <img class="avatar" src="./fig/student-1.png" alt="Qian Zhang" />
         <div class="name">Qian Zhang (Leader)</div>
@@ -450,7 +620,7 @@
 
     <!-- Research Interns -->
     <div class="team-category">Research Interns</div>
-    <div class="team-grid">
+    <div class="team-grid stagger-children reveal">
       <div class="member">
         <img class="avatar" src="./fig/intern-1.png" alt="Mingkai Liu" />
         <div class="name">Mingkai Liu</div>
@@ -499,7 +669,7 @@
 
     <!-- Undergraduate Interns -->
     <div class="team-category">Undergraduate Interns</div>
-    <div class="team-grid">
+    <div class="team-grid stagger-children reveal">
       <div class="member">
         <img class="avatar" src="./fig/yifan-zhu.jpeg" alt="Yifan Zhu" />
         <div class="name">Yifan Zhu</div>
@@ -744,7 +914,7 @@
 <div class="container">
   <section>
     <h2 class="section-title" style="text-align: center;">Affiliated Organizations</h2>
-    <div class="affiliations">
+    <div class="affiliations stagger-children reveal">
       <a href="#"><img src="./logo/senselab.jpg" alt="Sense Lab" /></a>
       <a href="#"><img src="./logo/senselabrobo.png" alt="SenseLabRobo" /></a>
       <a href="#"><img src="./logo/infinityrobotics.png" alt="Infinity Robotics" /></a>
@@ -767,5 +937,34 @@
   <p style="margin-top: 16px; font-size: 0.8em;">&copy; 2025 SenseLabRobo. All rights reserved.</p>
 </footer>
 
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const container = document.getElementById('particles');
+  const count = 25;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.animationDuration = (8 + Math.random() * 12) + 's';
+    p.style.animationDelay = Math.random() * 10 + 's';
+    p.style.width = p.style.height = (2 + Math.random() * 3) + 'px';
+    p.style.background = Math.random() > 0.5
+      ? 'rgba(102, 0, 153, 0.5)'
+      : 'rgba(88, 166, 255, 0.35)';
+    container.appendChild(p);
+  }
+})();
+</script>
 </body>
 </html>
