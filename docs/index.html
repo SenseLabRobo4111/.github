@@ -264,6 +264,35 @@
     gap: 8px;
   }
 
+  /* Affiliations */
+  .affiliations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .affiliations a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 24px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .affiliations a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 0, 153, 0.2);
+  }
+  .affiliations img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+
   /* Footer */
   footer {
     text-align: center;
@@ -296,7 +325,7 @@
     <p class="subtitle">Tsinghua University</p>
     <img class="hero-img" src="./fig/hero-banner.jpg" alt="SenseLab Robot Prototype" />
     <div class="badges">
-      <a href="https://www.tsinghua.edu.cn/en/"><img src="https://img.shields.io/badge/Institution-Tsinghua_University-660099?style=for-the-badge&logo=data:image/svg+xml;base64,&logoColor=white" alt="Tsinghua"/></a>
+      <a href="https://www.tsinghua.edu.cn/en/"><img src="https://img.shields.io/badge/Institution-Tsinghua_University-660099?style=for-the-badge&logoColor=white" alt="Tsinghua"/></a>
       <a href="#"><img src="https://img.shields.io/badge/Lab_Website-SenseLab.THU-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/></a>
     </div>
   </div>
@@ -714,6 +743,19 @@
         <img src="https://img.shields.io/badge/Compute-NVIDIA_Jetson_Orin-76B900?style=flat-square&logo=nvidia&logoColor=white" />
         <img src="https://img.shields.io/badge/Robot-Quadruped_%26_Humanoid-purple?style=flat-square&logo=robotframework&logoColor=white" />
       </div>
+    </div>
+  </section>
+</div>
+
+<!-- Affiliated Organizations -->
+<div class="container">
+  <section>
+    <h2 class="section-title" style="text-align: center;">Affiliated Organizations</h2>
+    <div class="affiliations">
+      <a href="#"><img src="./logo/senselab.jpg" alt="Sense Lab" /></a>
+      <a href="#"><img src="./logo/senselabrobo.png" alt="SenseLabRobo" /></a>
+      <a href="#"><img src="./logo/makesense.png" alt="MakeSens" /></a>
+      <a href="#"><img src="./logo/infinityrobotics.png" alt="Infinity Robotics" /></a>
     </div>
   </section>
 </div>

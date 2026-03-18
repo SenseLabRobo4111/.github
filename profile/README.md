@@ -15,7 +15,7 @@
 
   <p>
     <a href="https://www.tsinghua.edu.cn/en/">
-      <img src="https://img.shields.io/badge/Institution-Tsinghua_University-660099?style=for-the-badge&logo=tsinghuauniversity&logoColor=white" alt="Tsinghua University"/>
+      <img src="https://img.shields.io/badge/Institution-Tsinghua_University-660099?style=for-the-badge&logoColor=white" alt="Tsinghua University"/>
     </a>
     <a href="#">
       <img src="https://img.shields.io/badge/Lab_Website-SenseLab.THU-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
@@ -465,6 +465,25 @@ We leverage cutting-edge tools to power our research.
 </div>
 
 <br/>
+<br/><hr/><br/>
+
+## 🏛️ Affiliated Organizations
+
+<div align="center">
+  <a href="#">
+    <img src="./fig/logo-senselab.jpg" height="80" style="margin: 10px 20px;" alt="Sense Lab" />
+  </a>
+  <a href="#">
+    <img src="./fig/logo-senselabrobo.png" height="80" style="margin: 10px 20px;" alt="SenseLabRobo" />
+  </a>
+  <a href="#">
+    <img src="./fig/logo-makesense.png" height="80" style="margin: 10px 20px;" alt="MakeSens" />
+  </a>
+  <a href="#">
+    <img src="./fig/logo-infinityrobotics.png" height="80" style="margin: 10px 20px;" alt="Infinity Robotics" />
+  </a>
+</div>
+
 <br/>
 
 <div align="center">
