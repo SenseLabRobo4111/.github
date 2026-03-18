@@ -191,6 +191,63 @@
   }
   .member .links a:hover { text-decoration: underline; }
 
+  /* Publications */
+  .pub-year {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--purple);
+    margin: 28px 0 14px;
+    padding-left: 4px;
+  }
+  .pub {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .pub:hover {
+    transform: translateX(4px);
+    box-shadow: -4px 0 16px rgba(102, 0, 153, 0.2);
+    border-left: 3px solid var(--purple);
+  }
+  .pub .pub-title {
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .pub .pub-title a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .pub .pub-title a:hover { color: var(--purple); }
+  .pub .pub-authors {
+    font-size: 0.82em;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+  }
+  .pub .pub-venue {
+    font-size: 0.82em;
+    color: var(--text-muted);
+  }
+  .pub .pub-venue .venue-name {
+    color: var(--purple);
+    font-weight: 500;
+  }
+  .pub .pub-badge {
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .pub .badge-best { background: rgba(255, 165, 0, 0.2); color: #ffa500; }
+  .pub .badge-cite { background: rgba(102, 0, 153, 0.15); color: #a855f7; }
+
   /* Tech stack */
   .tech-row {
     margin-bottom: 20px;
@@ -476,6 +533,104 @@
         </div>
       </div>
     </div>
+  </section>
+</div>
+
+<hr class="divider" />
+
+<!-- Publications -->
+<div class="container">
+  <section>
+    <h2 class="section-title">Selected Publications</h2>
+    <p class="section-sub">Our research has been published in top-tier robotics and AI venues.</p>
+
+    <div class="pub-year">2025 / 2026</div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2510.14251">MACE: Mixture-of-Experts Accelerated Coordinate Encoding for Large-Scale Scene Localization and Rendering</a>
+        <span class="pub-badge badge-best">Best Paper, IROS 2025 Workshop</span>
+      </div>
+      <div class="pub-authors">M. Liu, D. Fan, H. Que, H. Gao, X. Liu, S. Peng, M. Lin, S. Gu, R. Ye, W. Qiu, H. Yao, R. Zhang, X. Huang</div>
+      <div class="pub-venue"><span class="venue-name">ICRA 2026</span> (Accepted) &bull; arXiv:2510.14251</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="#">Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation</a>
+      </div>
+      <div class="pub-authors">R. Li, Y. Mo, R. Zhao, H. Gao, H. Que, L. Mu</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2025</span> &bull; pp. 1847-1854 &bull; IEEE</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2504.04061">Mapping at First Sense: A Lightweight Neural Network-Based Indoor Structures Prediction Method for Robot Autonomous Exploration</a>
+      </div>
+      <div class="pub-authors">H. Gao, H. Que, K. Li, W. Shan, M. Liu, R. Zhao, L. Mu, X. Yang, Q. Wei, F. Qiao</div>
+      <div class="pub-venue"><span class="venue-name">IJCNN 2025</span> &bull; arXiv:2504.04061</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="#">SenseExpo: Lightweight Neural Networks for Efficient Autonomous Exploration and Scene Prediction</a>
+      </div>
+      <div class="pub-authors">H. Que, H. Gao, M. Liu, H. Au, H. Yao, F. Qiao</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2025 Workshop</span> on Edge AI for Robotics</div>
+    </div>
+
+    <div class="pub-year">2022</div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="#">OCTOANTS: A Heterogeneous Lightweight Intelligent Multi-Robot Collaboration System with Resource-Constrained IoT Devices</a>
+      </div>
+      <div class="pub-authors">Q. Zhang, R. Quan, S. Qimuge, P. Xia, J. Wang, X. Zan, F. Wang, C. Chen, Q. Wei, H. Zhao, X. Liu, F. Qiao</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2022</span> &bull; pp. 2556-2563 &bull; IEEE</div>
+    </div>
+
+    <div class="pub-year">2020</div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2008.05416">DXSLAM: A Robust and Efficient Visual SLAM System with Deep Features</a>
+        <span class="pub-badge badge-cite">Cited by 193</span>
+      </div>
+      <div class="pub-authors">D. Li, X. Shi, Q. Long, S. Liu, W. Yang, F. Wang, Q. Wei, F. Qiao</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2020</span> &bull; pp. 4958-4965 &bull; IEEE</div>
+    </div>
+
+    <div class="pub-year">2019</div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="#">A DenseNet Feature-Based Loop Closure Method for Visual SLAM System</a>
+      </div>
+      <div class="pub-authors">C. Yu, Z. Liu, X. Liu, F. Qiao, Y. Wang, F. Xie, Q. Wei, Y. Yang</div>
+      <div class="pub-venue"><span class="venue-name">ROBIO 2019</span> &bull; pp. 258-265 &bull; IEEE</div>
+    </div>
+
+    <div class="pub-year">2018</div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="#">DS-SLAM: A Semantic Visual SLAM towards Dynamic Environments</a>
+        <span class="pub-badge badge-cite">Cited by 1379</span>
+      </div>
+      <div class="pub-authors">C. Yu, Z. Liu, X. Liu, F. Xie, Y. Yang, Q. Wei, Q. Fei</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2018</span> &bull; pp. 1168-1174 &bull; IEEE</div>
+    </div>
+
+    <div class="pub-year">2017</div>
+
+    <div class="pub">
+      <div class="pub-title">
+        <a href="#">Multi-Robot Coordination for High-Speed Pick-and-Place Tasks</a>
+      </div>
+      <div class="pub-authors">C. Yu, X. Liu, F. Qiao, F. Xie</div>
+      <div class="pub-venue"><span class="venue-name">ROBIO 2017</span> &bull; pp. 1743-1750 &bull; IEEE</div>
+    </div>
+
   </section>
 </div>
 

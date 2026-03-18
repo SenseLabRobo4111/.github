@@ -361,6 +361,60 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
 <br/>
 <br/><hr/><br/>
 
+## 📄 Selected Publications
+
+Our research has been published in top-tier robotics and AI venues.
+
+#### 2025 / 2026
+
+- **MACE: Mixture-of-Experts Accelerated Coordinate Encoding for Large-Scale Scene Localization and Rendering** 🏆 *Best Paper, IROS 2025 Workshop*
+  M. Liu, D. Fan, H. Que, H. Gao, X. Liu, S. Peng, M. Lin, S. Gu, R. Ye, W. Qiu, H. Yao, R. Zhang, X. Huang
+  *ICRA 2026 (Accepted)* · [arXiv:2510.14251](https://arxiv.org/abs/2510.14251)
+
+- **Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation**
+  R. Li, Y. Mo, R. Zhao, H. Gao, H. Que, L. Mu
+  *IROS 2025* · pp. 1847-1854 · IEEE
+
+- **Mapping at First Sense: A Lightweight Neural Network-Based Indoor Structures Prediction Method for Robot Autonomous Exploration**
+  H. Gao, H. Que, K. Li, W. Shan, M. Liu, R. Zhao, L. Mu, X. Yang, Q. Wei, F. Qiao
+  *IJCNN 2025* · [arXiv:2504.04061](https://arxiv.org/abs/2504.04061)
+
+- **SenseExpo: Lightweight Neural Networks for Efficient Autonomous Exploration and Scene Prediction**
+  H. Que, H. Gao, M. Liu, H. Au, H. Yao, F. Qiao
+  *IROS 2025 Workshop on Edge AI for Robotics*
+
+#### 2022
+
+- **OCTOANTS: A Heterogeneous Lightweight Intelligent Multi-Robot Collaboration System with Resource-Constrained IoT Devices**
+  Q. Zhang, R. Quan, S. Qimuge, P. Xia, J. Wang, X. Zan, F. Wang, C. Chen, Q. Wei, H. Zhao, X. Liu, F. Qiao
+  *IROS 2022* · pp. 2556-2563 · IEEE
+
+#### 2020
+
+- **DXSLAM: A Robust and Efficient Visual SLAM System with Deep Features** 📊 *Cited by 193*
+  D. Li, X. Shi, Q. Long, S. Liu, W. Yang, F. Wang, Q. Wei, F. Qiao
+  *IROS 2020* · pp. 4958-4965 · IEEE
+
+#### 2019
+
+- **A DenseNet Feature-Based Loop Closure Method for Visual SLAM System**
+  C. Yu, Z. Liu, X. Liu, F. Qiao, Y. Wang, F. Xie, Q. Wei, Y. Yang
+  *ROBIO 2019* · pp. 258-265 · IEEE
+
+#### 2018
+
+- **DS-SLAM: A Semantic Visual SLAM towards Dynamic Environments** 📊 *Cited by 1379*
+  C. Yu, Z. Liu, X. Liu, F. Xie, Y. Yang, Q. Wei, Q. Fei
+  *IROS 2018* · pp. 1168-1174 · IEEE
+
+#### 2017
+
+- **Multi-Robot Coordination for High-Speed Pick-and-Place Tasks**
+  C. Yu, X. Liu, F. Qiao, F. Xie
+  *ROBIO 2017* · pp. 1743-1750 · IEEE
+
+<br/><hr/><br/>
+
 ## 🛠️ The SenseLab Tech Stack
 
 We leverage cutting-edge tools to power our research.
