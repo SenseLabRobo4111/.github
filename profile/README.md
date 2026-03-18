@@ -482,6 +482,9 @@ We leverage cutting-edge tools to power our research.
   <a href="#">
     <img src="./fig/logo-infinityrobotics.png" height="80" style="margin: 10px 20px;" alt="Infinity Robotics" />
   </a>
+  <a href="#">
+    <img src="./fig/logo-zerorobo.png" height="80" style="margin: 10px 20px;" alt="ZeroRobo" />
+  </a>
 </div>
 
 <br/>
