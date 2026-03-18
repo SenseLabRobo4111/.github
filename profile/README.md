@@ -365,6 +365,24 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
 
 Our research has been published in top-tier robotics and AI venues.
 
+#### Under Review
+
+- **DAC-MACE: Dynamic Attention-driven Context Mixture-of-Experts for Large-Scale Visual Relocalization** `Under Review` → *ECCV 2026*
+
+- **SenseExpo: Spatial Exploration and Navigation via Scene Estimation from Expeditious Predictive Updates** `Under Review` → *ICRA 2026*
+
+- **GEO: Geometry-Guided Efficient Quantization for Energy-Aware Automotive Perception** `Under Review` → *ICRA 2026*
+
+- **ACGSplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only** `Under Review` → *ICRA 2026*
+
+- **Zero-Shot Semantics-enhanced Autonomous Exploration in Complex Unknown Environments** `Under Review` → *IROS 2026*
+
+- **ST-GRL: Spatiotemporal Cognitive Graph Reinforcement Learning for Multi-Robot Collaborative Exploration** `Under Review` → *IROS 2026*
+
+- **Kinematic-Aware Improved Hippo Optimization with Laplacian Ironing for Swarm-based Path Planning in Cluttered Environments** `Under Review`
+
+- **MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles** `Under Review` → *IJCNN 2026*
+
 #### 2025 / 2026
 
 - **MACE: Mixture-of-Experts Accelerated Coordinate Encoding for Large-Scale Scene Localization and Rendering** 🏆 *Best Paper, IROS 2025 Workshop*
