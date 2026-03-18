@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SenseLabRobo - Tsinghua University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --purple: #660099;
+    --purple-light: rgba(102, 0, 153, 0.15);
+    --purple-glow: rgba(102, 0, 153, 0.4);
+    --bg: #0d1117;
+    --bg-card: #161b22;
+    --bg-card-hover: #1c2330;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --border: #30363d;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+  .hero h1 {
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: -1px;
+  }
+  .hero h1 .accent { color: var(--purple); }
+  .hero .subtitle {
+    font-size: 1.1em;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+  .hero-img {
+    margin: 36px auto;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 14px;
+    border: 2px solid var(--border);
+    box-shadow: 0 12px 40px rgba(102, 0, 153, 0.25);
+  }
+  .badges { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .badges img { height: 28px; }
+
+  /* Sections */
+  section { padding: 50px 0; }
+  .section-title {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .section-sub {
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    font-size: 1.05em;
+  }
+
+  hr.divider {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 0;
+  }
+
+  /* Pillars */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .pillar {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .pillar:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(102, 0, 153, 0.2);
+  }
+  .pillar .icon { font-size: 2.4em; margin-bottom: 14px; }
+  .pillar h3 { font-size: 1.1em; margin-bottom: 10px; }
+  .pillar p { color: var(--text-muted); font-size: 0.9em; }
+
+  /* PI Card */
+  .pi-card {
+    display: flex;
+    gap: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+  .pi-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid var(--purple);
+    box-shadow: 0 0 20px var(--purple-glow);
+    flex-shrink: 0;
+  }
+  .pi-card h2 { font-size: 1.5em; margin-bottom: 4px; }
+  .pi-card .role { color: var(--purple); font-weight: 600; font-size: 0.95em; }
+  .pi-card .dept { color: var(--text-muted); margin: 6px 0 14px; font-size: 0.9em; }
+  .pi-card .details { font-size: 0.9em; color: var(--text-muted); line-height: 1.8; }
+  .pi-card a { color: var(--purple); text-decoration: none; }
+  .pi-card a:hover { text-decoration: underline; }
+
+  /* Team grid */
+  .team-category {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 36px 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--purple);
+    display: inline-block;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .member {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 16px 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(102, 0, 153, 0.2);
+    background: var(--bg-card-hover);
+  }
+  .member .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 16px;
+    display: block;
+    border: 3px solid transparent;
+    box-shadow: 0 6px 20px var(--purple-glow);
+    background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+                linear-gradient(135deg, var(--purple), #a855f7) border-box;
+  }
+  .member .name {
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 6px;
+  }
+  .member .info {
+    font-size: 0.82em;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .member .focus {
+    color: var(--purple);
+    font-weight: 500;
+  }
+  .member .links {
+    margin-top: 12px;
+    font-size: 0.85em;
+  }
+  .member .links a {
+    color: var(--purple);
+    text-decoration: none;
+    margin: 0 6px;
+  }
+  .member .links a:hover { text-decoration: underline; }
+
+  /* Tech stack */
+  .tech-row {
+    margin-bottom: 20px;
+  }
+  .tech-row h4 {
+    font-size: 0.95em;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .tech-row .badges-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-muted);
+    font-size: 0.9em;
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+  }
+  footer a { color: var(--purple); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 768px) {
+    .pillars { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pi-card { flex-direction: column; align-items: center; text-align: center; }
+    .hero h1 { font-size: 2em; }
+  }
+  @media (max-width: 480px) {
+    .team-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="container">
+  <div class="hero">
+    <h1><span class="accent">Sense</span>Lab<span class="accent">Robo</span></h1>
+    <p class="subtitle">Tsinghua University</p>
+    <img class="hero-img" src="../profile/fig/hero-robot.jpg" alt="SenseLab Robot Prototype" />
+    <div class="badges">
+      <a href="https://www.tsinghua.edu.cn/en/"><img src="https://img.shields.io/badge/Institution-Tsinghua_University-660099?style=for-the-badge&logo=data:image/svg+xml;base64,&logoColor=white" alt="Tsinghua"/></a>
+      <a href="#"><img src="https://img.shields.io/badge/Lab_Website-SenseLab.THU-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/></a>
+    </div>
+  </div>
+</div>
+
+<hr class="divider" />
+
+<!-- Mission -->
+<div class="container">
+  <section>
+    <h2 class="section-title">Our Mission</h2>
+    <p class="section-sub">
+      At <strong>SenseLabRobo</strong>, we define the frontier of <strong>Embodied AI</strong>. We don't just build robots; we endow them with the ability to <em>sense</em> complex environments, <em>understand</em> semantic contexts, and <em>act</em> with agility and precision. Our research fuses multi-modal perception with advanced control theories to create intelligent machines that operate in the real world.
+    </p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="icon">👁️</div>
+        <h3>Multi-Modal Perception</h3>
+        <p>Fusing LiDAR, Camera, and IMU data for robust state estimation and semantic mapping in unstructured environments.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon">🦵</div>
+        <h3>Agile Locomotion & Control</h3>
+        <p>Developing model-predictive control and reinforcement learning frameworks for dynamic legged and wheeled robots.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon">🤖</div>
+        <h3>Embodied AI & Learning</h3>
+        <p>Bridging the gap between simulation and reality (Sim2Real) for autonomous decision-making and manipulation tasks.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<hr class="divider" />
+
+<!-- Team -->
+<div class="container">
+  <section>
+    <h2 class="section-title">The Team</h2>
+    <p class="section-sub">Driven by curiosity, united by code. We are a diverse group of researchers at Tsinghua.</p>
+
+    <!-- PI -->
+    <div class="pi-card">
+      <img src="../profile/fig/prof-pi.jpg" alt="Dr. Fei Qiao" />
+      <div>
+        <h2>Dr. Fei Qiao</h2>
+        <div class="role">Principal Investigator / Associate Professor</div>
+        <div class="dept">Department of Electronic Engineering, Tsinghua University</div>
+        <div class="details">
+          <strong>Research Lead:</strong> Edge Embodied Intelligence, Flexible Wearable Device, Near-zero Power Chips, High Energy Efficiency Intelligence System<br/>
+          <a href="mailto:qiaofei@tsinghua.edu.cn">✉️ Email</a> &nbsp;|&nbsp;
+          <a href="https://web.ee.tsinghua.edu.cn/qiaofei/zh_CN/index.htm">🌐 Faculty Homepage</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Members -->
+    <div class="team-category">Core Members & Researchers</div>
+    <div class="team-grid">
+      <div class="member">
+        <img class="avatar" src="../profile/fig/student-1.png" alt="Qian Zhang" />
+        <div class="name">Qian Zhang (Leader)</div>
+        <div class="info">
+          Ph.D. Candidate<br/>Tsinghua SIGS, Tsinghua University<br/>
+          <span class="focus">Focus: Perception & SLAM</span>
+        </div>
+        <div class="links">
+          <a href="mailto:qian.zhang@email.com">✉️ Email</a> | <a href="https://your-homepage.com">🌐 Web</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/student-2.png" alt="Haohua Que" />
+        <div class="name">Haohua Que (Collaborator)</div>
+        <div class="info">
+          Ph.D. Student<br/>College of Engineering, University of Georgia<br/>
+          <span class="focus">Focus: Robotic Control</span>
+        </div>
+        <div class="links">
+          <a href="mailto:haohua.que@email.com">✉️ Email</a> | <a href="#">🌐 Web</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/student-3.png" alt="Haojia Gao" />
+        <div class="name">Haojia Gao</div>
+        <div class="info">
+          Master Student<br/>Tsinghua SIGS, Tsinghua University<br/>
+          <span class="focus">Focus: Embodied Intelligence</span>
+        </div>
+        <div class="links">
+          <a href="mailto:intelligent@gaohaojia.top">✉️ Email</a> | <a href="https://gaohaojia.github.io/index.html">🌐 Web</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/student-4.png" alt="Weihao Shan" />
+        <div class="name">Weihao Shan</div>
+        <div class="info">
+          Master Student<br/>Dept. of E.E., Tsinghua University<br/>
+          <span class="focus">Focus: Robotic Chips Design</span>
+        </div>
+        <div class="links">
+          <a href="mailto:student@email.com">✉️ Email</a> | <a href="#">🌐 Web</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Interns -->
+    <div class="team-category">Research Interns</div>
+    <div class="team-grid">
+      <div class="member">
+        <img class="avatar" src="../profile/fig/intern-1.png" alt="Mingkai Liu" />
+        <div class="name">Mingkai Liu</div>
+        <div class="info">
+          Master Student<br/>School of Software & Microelectronics, Peking University<br/>
+          <span class="focus">Focus: 3D Reconstruction & Localization</span>
+        </div>
+        <div class="links">
+          <a href="mailto:qian.zhang@email.com">✉️ Email</a> | <a href="https://your-homepage.com">🌐 Web</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/yunchao-mo.jpeg" alt="Yunchao Mo" />
+        <div class="name">Yunchao Mo</div>
+        <div class="info">
+          Master Student<br/>College of CS & AI, Southwest Minzu University<br/>
+          <span class="focus">Focus: Reinforcement Learning</span>
+        </div>
+        <div class="links">
+          <a href="mailto:1197829412@qq.com">✉️ Email</a> | <a href="https://github.com/MoYunchao">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/hui-geng.jpeg" alt="Hui Geng" />
+        <div class="name">Hui Geng</div>
+        <div class="info">
+          Master Student<br/>School of Comm. & Info. Eng., Chongqing Univ. of Posts & Telecom.<br/>
+          <span class="focus">Focus: Multi-Robot Exploration</span>
+        </div>
+        <div class="links">
+          <a href="mailto:1759550479@qq.com">✉️ Email</a> | <a href="https://github.com/huishao-hub">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/chengkui-wang.jpeg" alt="Chengkui Wang" />
+        <div class="name">Chengkui Wang</div>
+        <div class="info">
+          Master Student<br/>Computer Science & Technology, Tiangong University<br/>
+          <span class="focus">Focus: 3D Reconstruction & Autonomous Driving Simulation</span>
+        </div>
+        <div class="links">
+          <a href="mailto:2996679235@qq.com">✉️ Email</a> | <a href="https://github.com/wangchengkui">🐙 GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Undergraduate Interns -->
+    <div class="team-category">Undergraduate Interns</div>
+    <div class="team-grid">
+      <div class="member">
+        <img class="avatar" src="../profile/fig/yifan-zhu.jpeg" alt="Yifan Zhu" />
+        <div class="name">Yifan Zhu</div>
+        <div class="info">
+          Undergraduate<br/>Xiuzhong College, Tsinghua University
+        </div>
+        <div class="links">
+          <a href="mailto:ivanzhu708@gmail.com">✉️ Email</a> | <a href="https://github.com/JJchess">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/yuyang-song.jpeg" alt="Yuyang Song" />
+        <div class="name">Yuyang Song</div>
+        <div class="info">
+          Undergraduate<br/>Information & Electronics, Beijing Institute of Technology<br/>
+          <span class="focus">Focus: Robotics</span>
+        </div>
+        <div class="links">
+          <a href="mailto:s70735526@163.com">✉️ Email</a> | <a href="https://github.com/SUNNYsyy2005">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/jiajun-sun.jpeg" alt="Jiajun Sun" />
+        <div class="name">Jiajun Sun</div>
+        <div class="info">
+          Undergraduate<br/>School of Mech. & Elec. Eng., Shenzhen University<br/>
+          <span class="focus">Focus: Robotics</span>
+        </div>
+        <div class="links">
+          <a href="mailto:1924916921@qq.com">✉️ Email</a> | <a href="mailto:Jiajuns757@gmail.com">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/shanxu-zhao.jpeg" alt="Shanxu Zhao" />
+        <div class="name">Shanxu Zhao</div>
+        <div class="info">
+          Undergraduate<br/>Dept. of Electronic Engineering, Tsinghua University
+        </div>
+        <div class="links">
+          <a href="mailto:zhaosx23@mails.tsinghua.edu.cn">✉️ Email</a> | <a href="https://github.com/boundless323">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/yannong-wen.jpeg" alt="Yannong Wen" />
+        <div class="name">Yannong Wen</div>
+        <div class="info">
+          Undergraduate (Senior)<br/>Fan Gongxiu Honors College, Beijing University of Technology
+        </div>
+        <div class="links">
+          <a href="mailto:amandawyn2023@gmail.com">✉️ Email</a> | <a href="https://github.com/amandawyn">🐙 GitHub</a>
+        </div>
+      </div>
+      <div class="member">
+        <img class="avatar" src="../profile/fig/hoiian-au.jpeg" alt="Hoi Ian Au" />
+        <div class="name">Hoi Ian Au</div>
+        <div class="info">
+          Undergraduate<br/>Dept. of Electronic Engineering, Tsinghua University<br/>
+          <span class="focus">Focus: Robotics & Agentic Systems</span>
+        </div>
+        <div class="links">
+          <a href="mailto:qke22@mails.tsinghua.edu.cn">✉️ Email</a> | <a href="https://github.com/HoiIanAu">🐙 GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<hr class="divider" />
+
+<!-- Tech Stack -->
+<div class="container">
+  <section>
+    <h2 class="section-title">The SenseLab Tech Stack</h2>
+    <p class="section-sub">We leverage cutting-edge tools to power our research.</p>
+
+    <div class="tech-row">
+      <h4>Platforms & Middleware</h4>
+      <div class="badges-row">
+        <img src="https://img.shields.io/badge/ROS2-Humble-22314E?style=flat-square&logo=ros&logoColor=white" />
+        <img src="https://img.shields.io/badge/Ubuntu-22.04_LTS-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
+        <img src="https://img.shields.io/badge/NVIDIA_Isaac_Sim-76B900?style=flat-square&logo=nvidia&logoColor=white" />
+        <img src="https://img.shields.io/badge/Gazebo-Simulator-orange?style=flat-square" />
+        <img src="https://img.shields.io/badge/Docker-Container-2496ED?style=flat-square&logo=docker&logoColor=white" />
+      </div>
+    </div>
+    <div class="tech-row">
+      <h4>Core Languages & Libraries</h4>
+      <div class="badges-row">
+        <img src="https://img.shields.io/badge/C++-17-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+        <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+        <img src="https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
+        <img src="https://img.shields.io/badge/PCL-Point_Clouds-blue?style=flat-square" />
+        <img src="https://img.shields.io/badge/CUDA-Accelerated-76B900?style=flat-square&logo=nvidia&logoColor=white" />
+      </div>
+    </div>
+    <div class="tech-row">
+      <h4>Hardware Focus</h4>
+      <div class="badges-row">
+        <img src="https://img.shields.io/badge/Sensor-LiDAR_(Velodyne/Hesai)-red?style=flat-square" />
+        <img src="https://img.shields.io/badge/Sensor-Depth_Camera_(Realsense)-blue?style=flat-square" />
+        <img src="https://img.shields.io/badge/Compute-NVIDIA_Jetson_Orin-76B900?style=flat-square&logo=nvidia&logoColor=white" />
+        <img src="https://img.shields.io/badge/Robot-Quadruped_%26_Humanoid-purple?style=flat-square&logo=robotframework&logoColor=white" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p><strong>Innovating at Tsinghua University.</strong></p>
+  <p>We are always looking for passionate collaborators and students.</p>
+  <p style="margin-top: 12px;">
+    <a href="mailto:contact@senselab.thu.edu.cn">✉️ Contact Us</a> &nbsp;|&nbsp;
+    <a href="#">📄 Publications</a> &nbsp;|&nbsp;
+    <a href="https://github.com/SenseLabRobo">🐙 GitHub</a>
+  </p>
+  <p style="margin-top: 16px; font-size: 0.8em;">&copy; 2025 SenseLabRobo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
