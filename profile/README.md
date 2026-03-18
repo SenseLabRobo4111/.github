@@ -471,19 +471,19 @@ We leverage cutting-edge tools to power our research.
 
 <div align="center">
   <a href="#">
-    <img src="./fig/logo-senselab.jpg" height="80" style="margin: 10px 20px;" alt="Sense Lab" />
+    <img src="./fig/logo-senselab.jpg" height="60" style="margin: 8px 12px;" alt="Sense Lab" />
   </a>
   <a href="#">
-    <img src="./fig/logo-senselabrobo.png" height="80" style="margin: 10px 20px;" alt="SenseLabRobo" />
+    <img src="./fig/logo-senselabrobo.png" height="60" style="margin: 8px 12px;" alt="SenseLabRobo" />
   </a>
   <a href="#">
-    <img src="./fig/logo-infinityrobotics.png" height="80" style="margin: 10px 20px;" alt="Infinity Robotics" />
+    <img src="./fig/logo-infinityrobotics.png" height="60" style="margin: 8px 12px;" alt="Infinity Robotics" />
   </a>
   <a href="#">
-    <img src="./fig/logo-zerorobo.png" height="80" style="margin: 10px 20px;" alt="ZeroRobo" />
+    <img src="./fig/logo-zerorobo.png" height="60" style="margin: 8px 12px;" alt="ZeroRobo" />
   </a>
   <a href="#">
-    <img src="./fig/logo-makesense.png" height="80" style="margin: 10px 20px;" alt="MakeSens" />
+    <img src="./fig/logo-makesense.png" height="60" style="margin: 8px 12px;" alt="MakeSens" />
   </a>
 </div>
 
