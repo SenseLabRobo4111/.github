@@ -371,9 +371,9 @@ Our research has been published in top-tier robotics and AI venues.
 
 - **SenseExpo: Spatial Exploration and Navigation via Scene Estimation from Expeditious Predictive Updates** `Under Review`
 
-- **GEO: Geometry-Guided Efficient Quantization for Energy-Aware Automotive Perception** `Under Review`
+- **GEQ: Geometry-Guided Efficient Quantization for Energy-Aware Automotive Perception** `Under Review`
 
-- **ACGSplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only** `Under Review`
+- **ACESplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only** `Under Review`
 
 - **Zero-Shot Semantics-enhanced Autonomous Exploration in Complex Unknown Environments** `Under Review`
 
@@ -406,6 +406,16 @@ Our research has been published in top-tier robotics and AI venues.
 - **OCTOANTS: A Heterogeneous Lightweight Intelligent Multi-Robot Collaboration System with Resource-Constrained IoT Devices**
   Q. Zhang, R. Quan, S. Qimuge, P. Xia, J. Wang, X. Zan, F. Wang, C. Chen, Q. Wei, H. Zhao, X. Liu, F. Qiao
   *IROS 2022* · pp. 2556-2563 · IEEE
+
+- **On the Way from Lightweight to Powerful Intelligence: A Heterogeneous Multi-Robot Social System with IoT Devices** 📊 *Cited by 2*
+  Q. Zhang, R. Quan, S. Qimuge, R. Wei, X. Zan, F. Wang, C. Chen, Q. Wei, X. Liu, F. Qiao
+  *CASE 2022* · pp. 842-848 · IEEE
+
+#### 2021
+
+- **RaP-Net: A Region-wise and Point-wise Weighting Network to Extract Robust Features for Indoor Localization** 📊 *Cited by 8*
+  D. Li, J. Miao, X. Shi, Y. Tian, Q. Long, T. Cai, P. Guo, H. Yu, W. Yang, H. Yue, Q. Wei, F. Qiao
+  *IROS 2021* · pp. 1331-1338 · IEEE
 
 #### 2020
 
