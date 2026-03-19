@@ -254,6 +254,11 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
         Master Student<br/>
         Central Saint Martins, University of the Arts London
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:xuhongyi24@163.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="http://www.hongyidesign.top/?list_3/" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Homepage">🌐 Web</a>
+        </div>
       </div>
     </td>
   </tr>
