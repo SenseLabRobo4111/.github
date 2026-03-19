@@ -266,7 +266,7 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
           <img src="./fig/chaojiecheng.jpg" style="width: 200px; height: auto; display: block;" />
       </div>
       <br/>
-      <strong style="font-size: 1.1em;">Chaojie Cheng</strong><br/>
+      <strong style="font-size: 1.1em;">Chaojie Chen</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
         Master Student<br/>
         School of Automation, Guangdong University of Technology<br/>
