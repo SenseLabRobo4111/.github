@@ -244,6 +244,19 @@ Driven by curiosity, united by code. We are a diverse group of researchers at Ts
       </div>
     </td>
   </tr>
+  <tr>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/hongyi.png" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Hongyi Xu</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Master Student<br/>
+        Central Saint Martins, University of the Arts London
+      </div>
+    </td>
+  </tr>
 </table>
 
 ### Undergraduate Interns
