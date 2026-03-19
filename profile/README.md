@@ -28,7 +28,11 @@
 
 ## 🔮 Our Mission
 
-At **SenseLabRobo**, we define the frontier of **Embodied AI**. We don't just build robots; we endow them with the ability to *sense* complex environments, *understand* semantic contexts, and *act* with agility and precision. Our research fuses multi-modal perception with advanced control theories to create intelligent machines that operate in the real world.
+**SenseLabRobo** was founded with a clear conviction: the future of robotics lies in the **vertical integration of processors and systems**. We don't chase breadth — we pursue depth. By building complete technical solutions from custom robotic chips to full-stack intelligent systems, we solve specific, real-world problems end-to-end. This is our Promethean logic — *forging every link in the chain, from silicon to autonomy.*
+
+<div align="center">
+  <img src="./fig/mission-architecture.png" width="80%" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(102, 0, 153, 0.25); border: 1px solid #30363d; margin: 20px 0;" alt="SenseLabRobo Technical Architecture — From Silicon to Autonomy" />
+</div>
 
 <br/>
 
@@ -37,19 +41,19 @@ At **SenseLabRobo**, we define the frontier of **Embodied AI**. We don't just bu
 <table align="center" style="border: none; width: 100%;">
   <tr>
     <td width="33%" align="center" style="border: none; padding: 10px;">
-      <h1>👁️</h1>
-      <h3>Multi-Modal Perception</h3>
-      <p>Fusing LiDAR, Camera, and IMU data for robust state estimation and semantic mapping in unstructured environments.</p>
+      <h1>🔬</h1>
+      <h3>Robotic Processor Design</h3>
+      <p>Designing near-zero power, high-efficiency chips purpose-built for robotic perception and control at the edge.</p>
     </td>
     <td width="33%" align="center" style="border: none; padding: 10px;">
-      <h1>🦵</h1>
-      <h3>Agile Locomotion & Control</h3>
-      <p>Developing model-predictive control and reinforcement learning frameworks for dynamic legged and wheeled robots.</p>
+      <h1>⚡</h1>
+      <h3>Full-Stack System Integration</h3>
+      <p>Vertically integrating custom silicon, sensor fusion, and intelligent algorithms into complete robotic platforms.</p>
     </td>
     <td width="33%" align="center" style="border: none; padding: 10px;">
       <h1>🤖</h1>
-      <h3>Embodied AI & Learning</h3>
-      <p>Bridging the gap between simulation and reality (Sim2Real) for autonomous decision-making and manipulation tasks.</p>
+      <h3>Edge Embodied Intelligence</h3>
+      <p>Deploying autonomous perception, navigation, and decision-making directly on resource-constrained robotic hardware.</p>
     </td>
   </tr>
 </table>
