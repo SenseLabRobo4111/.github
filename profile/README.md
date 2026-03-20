@@ -14,11 +14,8 @@
   <br/><br/>
 
   <p>
-    <a href="#">
-      <img src="https://img.shields.io/badge/Lab_Website-SenseLabRobo-660099?style=for-the-badge&logoColor=white" alt="SenseLabRobo"/>
-    </a>
-    <a href="#">
-      <img src="https://img.shields.io/badge/Lab_Website-SenseLab.THU-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
+    <a href="https://github.com/SenseLabRobo">
+      <img src="https://img.shields.io/badge/GitHub-SenseLabRobo-660099?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
     </a>
   </p>
 
