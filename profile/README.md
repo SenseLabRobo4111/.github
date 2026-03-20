@@ -505,13 +505,15 @@ Our research has been published in top-tier robotics and AI venues.
 
 - **Kinematic-Aware Improved Hippo Optimization with Laplacian Ironing for Swarm-based Path Planning in Cluttered Environments** `Under Review`
 
-- **MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles** `Under Review`
-
 #### 2025 / 2026
 
 - **MACE: Mixture-of-Experts Accelerated Coordinate Encoding for Large-Scale Scene Localization and Rendering** 🏆 *Best Paper, IROS 2025 Workshop*
   M. Liu, D. Fan, H. Que, H. Gao, X. Liu, S. Peng, M. Lin, S. Gu, R. Ye, W. Qiu, H. Yao, R. Zhang, X. Huang
   *ICRA 2026 (Accepted)* · [arXiv:2510.14251](https://arxiv.org/abs/2510.14251)
+
+- **MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles**
+  H. Que, M. Liu, J. Xie, H. Gao, J. Sun, H. Xu, H. Yao, F. Qiao
+  *IJCNN 2026 (Accepted)* · WCCI 2026
 
 - **Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation**
   R. Li, Y. Mo, R. Zhao, H. Gao, H. Que, L. Mu
