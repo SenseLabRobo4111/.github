@@ -483,6 +483,10 @@ Our research has been published in top-tier robotics and AI venues.
   D. Li, X. Shi, Q. Long, S. Liu, W. Yang, F. Wang, Q. Wei, F. Qiao
   *IROS 2020* · pp. 4958-4965 · IEEE
 
+- **Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong SLAM** 📊 *Cited by 226*
+  X. Shi, D. Li, P. Zhao, Q. Tian, Y. Tian, Q. Long, C. Zhu, J. Song, F. Qiao, L. Song, Y. Guo, Z. Wang, Y. Zhang, B. Qin, W. Yang, F. Wang, R.H.M. Chan, Q. She
+  *ICRA 2020* · pp. 3139-3145 · IEEE
+
 #### 2019
 
 - **A DenseNet Feature-Based Loop Closure Method for Visual SLAM System**
