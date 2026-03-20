@@ -303,7 +303,8 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
       <strong style="font-size: 1.1em;">Hongyi Xu</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
         Master Student<br/>
-        Central Saint Martins, University of the Arts London
+        Central Saint Martins, University of the Arts London<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Robotic Structural Design & Industrial Design
         <div style="margin-top: 12px; font-size: 1em;">
           <a href="mailto:xuhongyi24@163.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
           <span style="color: #ccc;">|</span>
