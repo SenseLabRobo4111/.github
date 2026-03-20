@@ -9,13 +9,16 @@
 
   <br/><br/>
 
-  <table align="center" width="88%" style="border-collapse: separate; border-spacing: 10px;">
+  <table align="center" width="90%" style="border-collapse: separate; border-spacing: 6px;">
     <tr>
       <td rowspan="3" width="54%" align="center" style="border: none; padding: 0;">
         <img src="./fig/hero-robot.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(102, 0, 153, 0.25); border: 1px solid #30363d;" alt="SenseLabRobo mobile robot fleet" />
       </td>
-      <td colspan="2" align="center" style="border: none; padding: 0;">
+      <td width="23%" align="center" style="border: none; padding: 0;">
         <img src="./fig/hero-pointcloud.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="3D mapping visualization" />
+      </td>
+      <td width="23%" align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-mesh.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="3D mesh reconstruction visualization" />
       </td>
     </tr>
     <tr>

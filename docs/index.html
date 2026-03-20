@@ -116,10 +116,10 @@
   }
   .hero-collage {
     margin: 36px auto 0;
-    width: min(100%, 980px);
+    width: min(100%, 960px);
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 1fr);
-    gap: 14px;
+    grid-template-columns: minmax(0, 1.42fr) minmax(300px, 0.98fr);
+    gap: 10px;
     align-items: start;
     animation: hero-img-in 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
@@ -173,7 +173,7 @@
     box-shadow: 0 20px 60px rgba(102, 0, 153, 0.32);
   }
   .hero-main-tile {
-    padding: 10px;
+    padding: 8px;
   }
   .hero-main-tile img,
   .hero-tile img {
@@ -192,17 +192,26 @@
     filter: saturate(1.06) contrast(1.02);
   }
   .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: start;
+    align-items: stretch;
+  }
+  .hero-grid-top,
+  .hero-grid-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-    align-content: start;
+    gap: 10px;
     align-items: start;
   }
-  .hero-tile {
-    padding: 10px;
+  .hero-grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
-  .hero-tile--wide {
-    grid-column: 1 / -1;
+  .hero-tile {
+    padding: 8px;
   }
   @keyframes hero-img-in {
     from { opacity: 0; transform: translateY(30px) scale(0.97); }
@@ -562,12 +571,15 @@
     .pi-card { flex-direction: column; align-items: center; text-align: center; }
     .hero h1 { font-size: 2em; }
     .hero-collage { grid-template-columns: 1fr; }
-    .hero-grid { gap: 12px; }
+    .hero-grid,
+    .hero-grid-top,
+    .hero-grid-column,
+    .hero-grid-columns { gap: 10px; }
     .affiliations { flex-wrap: wrap; gap: 12px; }
   }
   @media (max-width: 480px) {
-    .hero-grid { grid-template-columns: 1fr; }
-    .hero-tile--wide { grid-column: auto; }
+    .hero-grid-top,
+    .hero-grid-columns { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -587,20 +599,31 @@
         <img src="./fig/hero-robot.jpg" alt="SenseLabRobo mobile robot fleet" />
       </div>
       <div class="hero-grid">
-        <div class="hero-tile hero-tile--wide">
-          <img src="./fig/hero-pointcloud.png" alt="3D mapping visualization" />
+        <div class="hero-grid-top">
+          <div class="hero-tile">
+            <img src="./fig/hero-pointcloud.png" alt="3D mapping visualization" />
+          </div>
+          <div class="hero-tile">
+            <img src="./fig/hero-mesh.png" alt="3D mesh reconstruction visualization" />
+          </div>
         </div>
-        <div class="hero-tile">
-          <img src="./fig/hero-sensor.jpg" alt="Handheld robotic sensing module" />
-        </div>
-        <div class="hero-tile">
-          <img src="./fig/hero-quadruped.png" alt="Quadruped robot prototype" />
-        </div>
-        <div class="hero-tile">
-          <img src="./fig/hero-fpga.png" alt="FPGA board for robotic processing" />
-        </div>
-        <div class="hero-tile">
-          <img src="./fig/hero-fpgarobo.png" alt="FPGA-equipped wheeled robot" />
+        <div class="hero-grid-columns">
+          <div class="hero-grid-column">
+            <div class="hero-tile">
+              <img src="./fig/hero-sensor.jpg" alt="Handheld robotic sensing module" />
+            </div>
+            <div class="hero-tile">
+              <img src="./fig/hero-fpga.png" alt="FPGA board for robotic processing" />
+            </div>
+          </div>
+          <div class="hero-grid-column">
+            <div class="hero-tile">
+              <img src="./fig/hero-quadruped.png" alt="Quadruped robot prototype" />
+            </div>
+            <div class="hero-tile">
+              <img src="./fig/hero-fpgarobo.png" alt="FPGA-equipped wheeled robot" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
