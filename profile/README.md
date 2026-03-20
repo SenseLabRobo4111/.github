@@ -195,7 +195,7 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
     </td>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/yunchao-mo.jpeg" style="width: 200px; height: auto; display: block;" />
+          <img src="./fig/yunchao-mo.png" style="width: 200px; height: auto; display: block;" />
       </div>
       <br/>
       <strong style="font-size: 1.1em;">Yunchao Mo</strong><br/>
