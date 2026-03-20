@@ -1,7 +1,7 @@
 <div align="center">
 
   <h1>⚡️ <span style="color: #660099;">Sense</span>Lab<span style="color: #660099;">Robo</span> ⚡️</h1>
-  <h3>Tsinghua University | 清华大学</h3>
+  <h3></h3>
 
   <a href="https://github.com/SenseLabRobo">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=660099&center=true&vCenter=true&width=600&lines=Perception+Driven.+Action+Oriented.;Next-Gen+Embodied+AI.;Bridging+Digital+and+Physical+Worlds." alt="Typing SVG" />
@@ -14,8 +14,8 @@
   <br/><br/>
 
   <p>
-    <a href="https://www.tsinghua.edu.cn/en/">
-      <img src="https://img.shields.io/badge/Institution-Tsinghua_University-660099?style=for-the-badge&logoColor=white" alt="Tsinghua University"/>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Lab_Website-SenseLabRobo-660099?style=for-the-badge&logoColor=white" alt="SenseLabRobo"/>
     </a>
     <a href="#">
       <img src="https://img.shields.io/badge/Lab_Website-SenseLab.THU-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"/>
@@ -62,7 +62,7 @@
 
 ## 🧬 The Team
 
-Driven by curiosity, united by code. We are a diverse group of researchers at Tsinghua.
+Driven by curiosity, united by code. We are a diverse group of researchers.
 
 <table style="border: 1px solid var(--color-border-muted); background-color: var(--color-canvas-subtle); border-radius: 16px; padding: 20px; width: 95%; margin: auto; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);">
   <tr>
@@ -567,7 +567,7 @@ We leverage cutting-edge tools to power our research.
 
 <div align="center">
   <hr/>
-  <h3>Innovating at Tsinghua University.</h3>
+  <h3>Innovating with Purpose.</h3>
   <p>We are always looking for passionate collaborators and students.</p>
   <p>
     <a href="mailto:qiaofei@tsinghua.edu.cn">✉️ Contact Us</a> | 
