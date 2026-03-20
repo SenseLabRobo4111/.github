@@ -1,0 +1,45 @@
+name: Sync Robot Fig Gallery
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/robot_fig/**"
+      - "scripts/generate_robot_fig_gallery.py"
+      - "profile/README.md"
+      - "docs/index.html"
+      - ".github/workflows/sync-robot-fig-gallery.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-gallery:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate gallery manifest and README block
+        run: python scripts/generate_robot_fig_gallery.py
+
+      - name: Commit generated files
+        run: |
+          if git diff --quiet -- docs/robot_fig/gallery-manifest.json profile/README.md; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/robot_fig/gallery-manifest.json profile/README.md
+          git commit -m "Auto-sync robot_fig gallery"
+          git push

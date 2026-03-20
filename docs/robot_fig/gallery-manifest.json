@@ -1,0 +1,48 @@
+{
+  "images": [
+    {
+      "file": "3.png",
+      "alt": "3"
+    },
+    {
+      "file": "device.jpg",
+      "alt": "device"
+    },
+    {
+      "file": "fpga.png",
+      "alt": "fpga"
+    },
+    {
+      "file": "fpgarobo.png",
+      "alt": "fpgarobo"
+    },
+    {
+      "file": "hero-robot.jpg",
+      "alt": "hero robot"
+    },
+    {
+      "file": "k01.jpg",
+      "alt": "k01"
+    },
+    {
+      "file": "looper.jpg",
+      "alt": "looper"
+    },
+    {
+      "file": "mesh.png",
+      "alt": "mesh"
+    },
+    {
+      "file": "point.png",
+      "alt": "point"
+    },
+    {
+      "file": "图片1.jpg",
+      "alt": "图片1"
+    },
+    {
+      "file": "图片2.png",
+      "alt": "图片2"
+    }
+  ]
+}
