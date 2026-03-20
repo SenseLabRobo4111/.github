@@ -9,7 +9,32 @@
 
   <br/><br/>
 
-  <img src="./fig/hero-banner.jpg" width="85%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(102, 0, 153, 0.3); border: 2px solid #e1e4e8;" alt="SenseLab Robot Prototype" />
+  <table align="center" width="88%" style="border-collapse: separate; border-spacing: 10px;">
+    <tr>
+      <td rowspan="3" width="54%" align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-robot.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(102, 0, 153, 0.25); border: 1px solid #30363d;" alt="SenseLabRobo mobile robot fleet" />
+      </td>
+      <td colspan="2" align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-pointcloud.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="3D mapping visualization" />
+      </td>
+    </tr>
+    <tr>
+      <td width="23%" align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-sensor.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="Handheld robotic sensing module" />
+      </td>
+      <td width="23%" align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-quadruped.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="Quadruped robot prototype" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-fpga.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="FPGA board for robotic processing" />
+      </td>
+      <td align="center" style="border: none; padding: 0;">
+        <img src="./fig/hero-fpgarobo.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="FPGA-equipped wheeled robot" />
+      </td>
+    </tr>
+  </table>
 
   <br/><br/>
 

@@ -114,23 +114,115 @@
     margin-top: 6px;
     animation: hero-text-in 1s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
-  .hero-img {
-    margin: 36px auto;
-    width: 85%;
-    max-width: 900px;
-    border-radius: 14px;
-    border: 2px solid var(--border);
-    box-shadow: 0 12px 40px rgba(102, 0, 153, 0.25);
+  .hero-collage {
+    margin: 36px auto 0;
+    width: min(100%, 980px);
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 1fr);
+    gap: 14px;
+    align-items: stretch;
     animation: hero-img-in 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
-    transition: box-shadow 0.4s, transform 0.4s;
   }
-  .hero-img:hover {
-    box-shadow: 0 20px 60px rgba(102, 0, 153, 0.4);
-    transform: scale(1.01);
+  .hero-main-tile,
+  .hero-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.18);
+    background: linear-gradient(180deg, rgba(22, 27, 34, 0.98), rgba(13, 17, 23, 0.98));
+    box-shadow: 0 12px 40px rgba(102, 0, 153, 0.18);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.35s,
+                border-color 0.35s;
+  }
+  .hero-main-tile::before,
+  .hero-tile::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.12), transparent 42%, rgba(88, 166, 255, 0.08));
+    opacity: 0.75;
+    pointer-events: none;
+  }
+  .hero-main-tile::after,
+  .hero-tile::after {
+    content: '';
+    position: absolute;
+    inset: -35%;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.18), transparent 58%);
+    opacity: 0.28;
+    animation: hero-glow-drift 12s linear infinite;
+    pointer-events: none;
+  }
+  .hero-main-tile,
+  .hero-grid .hero-tile {
+    opacity: 0;
+    animation: hero-card-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .hero-main-tile { animation-delay: 0.25s; }
+  .hero-grid .hero-tile:nth-child(1) { animation-delay: 0.35s; }
+  .hero-grid .hero-tile:nth-child(2) { animation-delay: 0.43s; }
+  .hero-grid .hero-tile:nth-child(3) { animation-delay: 0.51s; }
+  .hero-grid .hero-tile:nth-child(4) { animation-delay: 0.59s; }
+  .hero-grid .hero-tile:nth-child(5) { animation-delay: 0.67s; }
+  .hero-main-tile:hover,
+  .hero-tile:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.42);
+    box-shadow: 0 20px 60px rgba(102, 0, 153, 0.32);
+  }
+  .hero-main-tile {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-main-tile img,
+  .hero-tile img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.45s ease, filter 0.45s ease;
+  }
+  .hero-main-tile img { border-radius: 12px; }
+  .hero-main-tile:hover img,
+  .hero-tile:hover img {
+    transform: scale(1.03);
+    filter: saturate(1.06) contrast(1.02);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    align-content: start;
+  }
+  .hero-tile {
+    min-height: 190px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-tile--wide {
+    grid-column: 1 / -1;
+    min-height: 228px;
   }
   @keyframes hero-img-in {
     from { opacity: 0; transform: translateY(30px) scale(0.97); }
     to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes hero-card-in {
+    from { opacity: 0; transform: translateY(26px) scale(0.98); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes hero-glow-drift {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
   }
   .badges {
     margin-top: 20px;
@@ -477,9 +569,14 @@
     .team-grid { grid-template-columns: repeat(2, 1fr); }
     .pi-card { flex-direction: column; align-items: center; text-align: center; }
     .hero h1 { font-size: 2em; }
+    .hero-collage { grid-template-columns: 1fr; }
+    .hero-grid { gap: 12px; }
+    .hero-tile { min-height: 170px; }
     .affiliations { flex-wrap: wrap; gap: 12px; }
   }
   @media (max-width: 480px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-tile--wide { grid-column: auto; }
     .team-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -494,7 +591,28 @@
   <div class="hero">
     <h1><span class="accent">Sense</span>Lab<span class="accent">Robo</span></h1>
     <p class="subtitle"></p>
-    <img class="hero-img" src="./fig/hero-banner.jpg" alt="SenseLab Robot Prototype" />
+    <div class="hero-collage">
+      <div class="hero-main-tile">
+        <img src="./fig/hero-robot.jpg" alt="SenseLabRobo mobile robot fleet" />
+      </div>
+      <div class="hero-grid">
+        <div class="hero-tile hero-tile--wide">
+          <img src="./fig/hero-pointcloud.png" alt="3D mapping visualization" />
+        </div>
+        <div class="hero-tile">
+          <img src="./fig/hero-sensor.jpg" alt="Handheld robotic sensing module" />
+        </div>
+        <div class="hero-tile">
+          <img src="./fig/hero-quadruped.png" alt="Quadruped robot prototype" />
+        </div>
+        <div class="hero-tile">
+          <img src="./fig/hero-fpga.png" alt="FPGA board for robotic processing" />
+        </div>
+        <div class="hero-tile">
+          <img src="./fig/hero-fpgarobo.png" alt="FPGA-equipped wheeled robot" />
+        </div>
+      </div>
+    </div>
     <div class="badges">
       <a href="https://github.com/SenseLabRobo"><img src="https://img.shields.io/badge/GitHub-SenseLabRobo-660099?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
     </div>
