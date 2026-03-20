@@ -31,30 +31,28 @@
       <img src="../docs/robot_fig/fpgarobo.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="fpgarobo" />
     </td>
     <td width="33%" align="center" style="border: none; padding: 0;">
-      <img src="../docs/robot_fig/hero-robot.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="hero robot" />
-    </td>
-    <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/k01.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="k01" />
     </td>
-  </tr>
-  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/looper.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="looper" />
     </td>
+  </tr>
+  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/mesh.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="mesh" />
     </td>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/point.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="point" />
     </td>
-  </tr>
-  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/%E5%9B%BE%E7%89%871.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="图片1" />
     </td>
+  </tr>
+  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/%E5%9B%BE%E7%89%872.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="图片2" />
     </td>
+    <td width="33%" align="center" style="border: none; padding: 0;"></td>
     <td width="33%" align="center" style="border: none; padding: 0;"></td>
   </tr>
 </table>

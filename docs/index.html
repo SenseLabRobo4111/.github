@@ -187,8 +187,24 @@
     filter: saturate(1.06) contrast(1.02);
   }
   .hero-gallery {
-    columns: 2 180px;
-    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .hero-gallery-featured {
+    display: block;
+  }
+  .hero-gallery-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    align-items: start;
+  }
+  .hero-gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .hero-gallery-empty {
     padding: 18px 14px;
@@ -199,8 +215,7 @@
   .hero-tile {
     padding: 8px;
     display: block;
-    break-inside: avoid;
-    margin: 0 0 10px;
+    margin: 0;
   }
   @keyframes hero-img-in {
     from { opacity: 0; transform: translateY(30px) scale(0.97); }
@@ -560,11 +575,13 @@
     .pi-card { flex-direction: column; align-items: center; text-align: center; }
     .hero h1 { font-size: 2em; }
     .hero-collage { grid-template-columns: 1fr; }
-    .hero-gallery { columns: 2 160px; }
+    .hero-gallery,
+    .hero-gallery-columns,
+    .hero-gallery-column { gap: 10px; }
     .affiliations { flex-wrap: wrap; gap: 12px; }
   }
   @media (max-width: 480px) {
-    .hero-gallery { columns: 1; }
+    .hero-gallery-columns { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -1127,6 +1144,32 @@
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   const gallery = document.getElementById('robot-fig-gallery');
+  const loadImageMeta = (entry, index) => new Promise((resolve) => {
+    const file = typeof entry === 'string' ? entry : entry.file;
+    const alt = typeof entry === 'string' ? `Robot figure ${index + 1}` : (entry.alt || `Robot figure ${index + 1}`);
+
+    const probe = new Image();
+    probe.onload = () => {
+      resolve({
+        file,
+        alt,
+        width: probe.naturalWidth || 1,
+        height: probe.naturalHeight || 1,
+        ratio: (probe.naturalWidth || 1) / (probe.naturalHeight || 1),
+      });
+    };
+    probe.onerror = () => {
+      resolve({
+        file,
+        alt,
+        width: 1,
+        height: 1,
+        ratio: 1,
+      });
+    };
+    probe.src = `./robot_fig/${encodeURIComponent(file)}`;
+  });
+
   const renderRobotFigGallery = async () => {
     if (!gallery) return;
 
@@ -1142,24 +1185,50 @@
         return;
       }
 
+      const loadedImages = await Promise.all(images.map((item, index) => loadImageMeta(item, index)));
       gallery.innerHTML = '';
 
-      images.forEach((item, index) => {
+      const createTile = (item, index, eager = false) => {
         const tile = document.createElement('div');
         tile.className = 'hero-tile';
         tile.style.animationDelay = `${0.35 + index * 0.06}s`;
 
         const img = document.createElement('img');
-        const file = typeof item === 'string' ? item : item.file;
-        const alt = typeof item === 'string' ? `Robot figure ${index + 1}` : (item.alt || `Robot figure ${index + 1}`);
-
-        img.src = `./robot_fig/${encodeURIComponent(file)}`;
-        img.alt = alt;
-        img.loading = index < 4 ? 'eager' : 'lazy';
+        img.src = `./robot_fig/${encodeURIComponent(item.file)}`;
+        img.alt = item.alt;
+        img.loading = eager ? 'eager' : 'lazy';
 
         tile.appendChild(img);
-        gallery.appendChild(tile);
+        return tile;
+      };
+
+      const featuredIndex = loadedImages.findIndex((item) => item.ratio >= 1.25);
+      const featuredItem = featuredIndex >= 0 ? loadedImages[featuredIndex] : loadedImages[0];
+      const remaining = loadedImages.filter((item) => item !== featuredItem);
+
+      const featuredWrap = document.createElement('div');
+      featuredWrap.className = 'hero-gallery-featured';
+      featuredWrap.appendChild(createTile(featuredItem, 0, true));
+      gallery.appendChild(featuredWrap);
+
+      const columnsWrap = document.createElement('div');
+      columnsWrap.className = 'hero-gallery-columns';
+
+      const columns = [document.createElement('div'), document.createElement('div')];
+      const heights = [0, 0];
+      columns.forEach((col) => {
+        col.className = 'hero-gallery-column';
+        columnsWrap.appendChild(col);
       });
+
+      remaining.forEach((item, index) => {
+        const estimatedHeight = item.height / item.width;
+        const targetIndex = heights[0] <= heights[1] ? 0 : 1;
+        columns[targetIndex].appendChild(createTile(item, index + 1, index < 3));
+        heights[targetIndex] += estimatedHeight;
+      });
+
+      gallery.appendChild(columnsWrap);
     } catch (error) {
       gallery.innerHTML = '<div class="hero-tile hero-gallery-empty">robot_fig gallery will appear after the manifest is generated.</div>';
     }

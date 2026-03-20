@@ -15,7 +15,7 @@ README_PATH = ROOT / "profile" / "README.md"
 README_START = "<!-- ROBOT_FIG_GALLERY:START -->"
 README_END = "<!-- ROBOT_FIG_GALLERY:END -->"
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif"}
-IGNORED_FILES = {"gallery-manifest.json"}
+IGNORED_FILES = {"gallery-manifest.json", "hero-robot.jpg"}
 
 
 def iter_robot_fig_images() -> list[Path]:
@@ -25,7 +25,7 @@ def iter_robot_fig_images() -> list[Path]:
             for path in ROBOT_FIG_DIR.iterdir()
             if path.is_file()
             and path.suffix.lower() in IMAGE_EXTENSIONS
-            and path.name not in IGNORED_FILES
+            and path.name.lower() not in IGNORED_FILES
         ],
         key=lambda path: path.name.casefold(),
     )
