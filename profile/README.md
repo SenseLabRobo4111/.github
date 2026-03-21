@@ -325,6 +325,23 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
         </div>
       </div>
     </td>
+    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
+          <img src="./fig/chunhong-yuan.png" style="width: 200px; height: auto; display: block;" />
+      </div>
+      <br/>
+      <strong style="font-size: 1.1em;">Chunhong Yuan</strong><br/>
+      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
+        Researcher<br/>
+        Faculty of Control Systems and Robotics, ITMO University<br/>
+        St. Petersburg, 197101, Russia<br/>
+        <div style="margin-top: 12px; font-size: 1em;">
+          <a href="mailto:Y2399549081@outlook.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
+          <span style="color: #ccc;">|</span>
+          <a href="https://coralr-1.github.io/" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Homepage">🌐 Web</a>
+        </div>
+      </div>
+    </td>
   </tr>
 </table>
 
