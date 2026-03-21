@@ -332,9 +332,10 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
       <br/>
       <strong style="font-size: 1.1em;">Chunhong Yuan</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-        Researcher<br/>
+        Master Student<br/>
         Faculty of Control Systems and Robotics, ITMO University<br/>
         St. Petersburg, 197101, Russia<br/>
+        <span style="color: #660099; font-weight: bold;">Focus:</span> Machine Learning Applications in Robotics, Intelligent Control Systems, and Interdisciplinary AI
         <div style="margin-top: 12px; font-size: 1em;">
           <a href="mailto:Y2399549081@outlook.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
           <span style="color: #ccc;">|</span>
