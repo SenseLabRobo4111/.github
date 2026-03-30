@@ -124,7 +124,7 @@
   }
   .hero-top-row {
     display: grid;
-    grid-template-columns: minmax(0, 1.46fr) minmax(260px, 0.94fr);
+    grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr);
     gap: 10px;
     align-items: start;
   }
@@ -1225,10 +1225,9 @@
         return tile;
       };
 
-      const landscapeCandidates = loadedImages.filter((item) => item.ratio >= 1.15);
-      const featuredPool = landscapeCandidates.length ? landscapeCandidates : loadedImages;
-      const featuredItem = [...featuredPool].sort((a, b) => {
-        const ratioDelta = b.ratio - a.ratio;
+      const featuredTargetRatio = 1;
+      const featuredItem = [...loadedImages].sort((a, b) => {
+        const ratioDelta = Math.abs(a.ratio - featuredTargetRatio) - Math.abs(b.ratio - featuredTargetRatio);
         if (Math.abs(ratioDelta) > 0.01) return ratioDelta;
         return (b.width * b.height) - (a.width * a.height);
       })[0];
