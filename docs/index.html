@@ -116,12 +116,17 @@
   }
   .hero-collage {
     margin: 36px auto 0;
-    width: min(100%, 960px);
+    width: min(100%, 980px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: hero-img-in 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .hero-top-row {
     display: grid;
-    grid-template-columns: minmax(0, 1.42fr) minmax(300px, 0.98fr);
+    grid-template-columns: minmax(0, 1.46fr) minmax(260px, 0.94fr);
     gap: 10px;
     align-items: start;
-    animation: hero-img-in 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
   .hero-main-tile,
   .hero-tile {
@@ -156,6 +161,7 @@
     pointer-events: none;
   }
   .hero-main-tile,
+  .hero-featured-slot .hero-tile,
   .hero-gallery .hero-tile {
     opacity: 0;
     animation: hero-card-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -186,18 +192,12 @@
     transform: scale(1.03);
     filter: saturate(1.06) contrast(1.02);
   }
-  .hero-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-  }
-  .hero-gallery-featured {
+  .hero-featured-slot {
     display: block;
   }
-  .hero-gallery-columns {
+  .hero-gallery {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
     align-items: start;
   }
@@ -211,6 +211,7 @@
     color: var(--text-muted);
     font-size: 0.9em;
     text-align: center;
+    grid-column: 1 / -1;
   }
   .hero-tile {
     padding: 8px;
@@ -574,14 +575,14 @@
     .team-grid { grid-template-columns: repeat(2, 1fr); }
     .pi-card { flex-direction: column; align-items: center; text-align: center; }
     .hero h1 { font-size: 2em; }
-    .hero-collage { grid-template-columns: 1fr; }
+    .hero-top-row { grid-template-columns: 1fr; }
+    .hero-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .hero-gallery,
-    .hero-gallery-columns,
     .hero-gallery-column { gap: 10px; }
     .affiliations { flex-wrap: wrap; gap: 12px; }
   }
   @media (max-width: 480px) {
-    .hero-gallery-columns { grid-template-columns: 1fr; }
+    .hero-gallery { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
   }
 </style>
@@ -597,12 +598,15 @@
     <h1><span class="accent">Sense</span>Lab<span class="accent">Robo</span></h1>
     <p class="subtitle"></p>
     <div class="hero-collage">
-      <div class="hero-main-tile">
-        <img src="./fig/hero-robot.jpg" alt="SenseLabRobo mobile robot fleet" />
+      <div class="hero-top-row">
+        <div class="hero-main-tile">
+          <img src="./fig/hero-robot.jpg" alt="SenseLabRobo mobile robot fleet" />
+        </div>
+        <div class="hero-featured-slot" id="robot-fig-featured">
+          <div class="hero-tile hero-gallery-empty">Loading robot_fig gallery...</div>
+        </div>
       </div>
-      <div class="hero-gallery" id="robot-fig-gallery">
-        <div class="hero-tile hero-gallery-empty">Loading robot_fig gallery...</div>
-      </div>
+      <div class="hero-gallery" id="robot-fig-gallery"></div>
     </div>
     <div class="badges">
       <a href="https://github.com/SenseLabRobo"><img src="https://img.shields.io/badge/GitHub-SenseLabRobo-660099?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
@@ -1159,6 +1163,7 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+  const featuredSlot = document.getElementById('robot-fig-featured');
   const gallery = document.getElementById('robot-fig-gallery');
   const loadImageMeta = (entry, index) => new Promise((resolve) => {
     const file = typeof entry === 'string' ? entry : entry.file;
@@ -1187,7 +1192,7 @@
   });
 
   const renderRobotFigGallery = async () => {
-    if (!gallery) return;
+    if (!featuredSlot || !gallery) return;
 
     try {
       const response = await fetch('./robot_fig/gallery-manifest.json', { cache: 'no-store' });
@@ -1197,11 +1202,13 @@
       const images = Array.isArray(manifest.images) ? manifest.images : [];
 
       if (!images.length) {
+        featuredSlot.innerHTML = '';
         gallery.innerHTML = '<div class="hero-tile hero-gallery-empty">No robot_fig images available yet.</div>';
         return;
       }
 
       const loadedImages = await Promise.all(images.map((item, index) => loadImageMeta(item, index)));
+      featuredSlot.innerHTML = '';
       gallery.innerHTML = '';
 
       const createTile = (item, index, eager = false) => {
@@ -1236,30 +1243,42 @@
           return (b.width * b.height) - (a.width * a.height);
         });
 
-      const featuredWrap = document.createElement('div');
-      featuredWrap.className = 'hero-gallery-featured';
-      featuredWrap.appendChild(createTile(featuredItem, 0, true));
-      gallery.appendChild(featuredWrap);
+      featuredSlot.appendChild(createTile(featuredItem, 0, true));
 
-      const columnsWrap = document.createElement('div');
-      columnsWrap.className = 'hero-gallery-columns';
-
-      const columns = [document.createElement('div'), document.createElement('div')];
-      const heights = [0, 0];
+      const columns = [
+        document.createElement('div'),
+        document.createElement('div'),
+        document.createElement('div'),
+      ];
+      const heights = [0, 0, 0];
       columns.forEach((col) => {
         col.className = 'hero-gallery-column';
-        columnsWrap.appendChild(col);
+        gallery.appendChild(col);
       });
 
       remaining.forEach((item, index) => {
         const estimatedHeight = item.height / item.width;
-        const targetIndex = heights[0] <= heights[1] ? 0 : 1;
-        columns[targetIndex].appendChild(createTile(item, index + 1, index < 3));
-        heights[targetIndex] += estimatedHeight;
-      });
+        let bestIndex = 0;
+        let bestScore = Number.POSITIVE_INFINITY;
 
-      gallery.appendChild(columnsWrap);
+        heights.forEach((_, candidateIndex) => {
+          const nextHeights = heights.map((height, heightIndex) =>
+            height + (heightIndex === candidateIndex ? estimatedHeight : 0)
+          );
+          const spread = Math.max(...nextHeights) - Math.min(...nextHeights);
+          const score = spread * 10 + Math.max(...nextHeights);
+
+          if (score < bestScore) {
+            bestScore = score;
+            bestIndex = candidateIndex;
+          }
+        });
+
+        columns[bestIndex].appendChild(createTile(item, index + 1, index < 6));
+        heights[bestIndex] += estimatedHeight;
+      });
     } catch (error) {
+      featuredSlot.innerHTML = '';
       gallery.innerHTML = '<div class="hero-tile hero-gallery-empty">robot_fig gallery will appear after the manifest is generated.</div>';
     }
   };
