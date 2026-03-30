@@ -17,43 +17,58 @@
 <table align="center" width="90%" style="border-collapse: separate; border-spacing: 6px;">
   <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
+      <img src="../docs/robot_fig/1741046235301319.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="1741046235301319" />
+    </td>
+    <td width="33%" align="center" style="border: none; padding: 0;">
+      <img src="../docs/robot_fig/1742603606230458.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="1742603606230458" />
+    </td>
+    <td width="33%" align="center" style="border: none; padding: 0;">
+      <img src="../docs/robot_fig/1749719738102570.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="1749719738102570" />
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" align="center" style="border: none; padding: 0;">
+      <img src="../docs/robot_fig/1764680446175465.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="1764680446175465" />
+    </td>
+    <td width="33%" align="center" style="border: none; padding: 0;">
+      <img src="../docs/robot_fig/1773912111646900.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="1773912111646900" />
+    </td>
+    <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/3.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="3" />
     </td>
+  </tr>
+  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/device.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="device" />
     </td>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/fpga.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="fpga" />
     </td>
-  </tr>
-  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/fpgarobo.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="fpgarobo" />
     </td>
+  </tr>
+  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/k01.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="k01" />
     </td>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/looper.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="looper" />
     </td>
-  </tr>
-  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/mesh.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="mesh" />
     </td>
+  </tr>
+  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/point.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="point" />
     </td>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/%E5%9B%BE%E7%89%871.jpg" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="图片1" />
     </td>
-  </tr>
-  <tr>
     <td width="33%" align="center" style="border: none; padding: 0;">
       <img src="../docs/robot_fig/%E5%9B%BE%E7%89%872.png" width="100%" style="border-radius: 12px; box-shadow: 0 10px 24px rgba(102, 0, 153, 0.18); border: 1px solid #30363d;" alt="图片2" />
     </td>
-    <td width="33%" align="center" style="border: none; padding: 0;"></td>
-    <td width="33%" align="center" style="border: none; padding: 0;"></td>
   </tr>
 </table>
 <!-- ROBOT_FIG_GALLERY:END -->

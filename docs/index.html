@@ -1218,9 +1218,23 @@
         return tile;
       };
 
-      const featuredIndex = loadedImages.findIndex((item) => item.ratio >= 1.25);
-      const featuredItem = featuredIndex >= 0 ? loadedImages[featuredIndex] : loadedImages[0];
-      const remaining = loadedImages.filter((item) => item !== featuredItem);
+      const landscapeCandidates = loadedImages.filter((item) => item.ratio >= 1.15);
+      const featuredPool = landscapeCandidates.length ? landscapeCandidates : loadedImages;
+      const featuredItem = [...featuredPool].sort((a, b) => {
+        const ratioDelta = b.ratio - a.ratio;
+        if (Math.abs(ratioDelta) > 0.01) return ratioDelta;
+        return (b.width * b.height) - (a.width * a.height);
+      })[0];
+
+      const remaining = loadedImages
+        .filter((item) => item !== featuredItem)
+        .sort((a, b) => {
+          const aHeightEstimate = a.height / a.width;
+          const bHeightEstimate = b.height / b.width;
+          const heightDelta = bHeightEstimate - aHeightEstimate;
+          if (Math.abs(heightDelta) > 0.01) return heightDelta;
+          return (b.width * b.height) - (a.width * a.height);
+        });
 
       const featuredWrap = document.createElement('div');
       featuredWrap.className = 'hero-gallery-featured';
