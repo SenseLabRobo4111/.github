@@ -461,6 +461,19 @@
   .pub .badge-best { background: rgba(255, 165, 0, 0.2); color: #ffa500; }
   .pub .badge-cite { background: rgba(102, 0, 153, 0.15); color: #a855f7; }
   .pub .badge-review { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+  .pub-figure { margin: 14px 0 0; }
+  .pub-figure a { display: block; width: fit-content; max-width: 100%; }
+  .pub-figure img {
+    display: block;
+    max-width: 100%;
+    max-height: 320px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .pub-figure figcaption { margin-top: 7px; color: var(--text-muted); font-size: 0.76em; }
+  .pub-figure figcaption a { display: inline; color: var(--purple); }
 
   /* ───── Tech stack ───── */
   .tech-row {
@@ -671,13 +684,13 @@
       </div>
     </div>
 
-    <!-- Postdoc -->
+    <!-- Former postdoc -->
     <div class="pi-card reveal">
       <img src="./fig/rongzhao.jpg" alt="Dr. Rong Zhao" />
       <div>
         <h2>Dr. Rong Zhao</h2>
-        <div class="role">Postdoctoral Researcher / Lecturer</div>
-        <div class="dept">Tsinghua University (Postdoc) &amp; North University of China (Lecturer)</div>
+        <div class="role">Lecturer / Former Postdoctoral Researcher</div>
+        <div class="dept">North University of China (Lecturer) &amp; Tsinghua University (Postdoctoral appointment completed)</div>
         <div class="details">
           <strong>Research Focus:</strong> Robot Navigation<br/>
           <a href="mailto:ZhaoRoy4107@gmail.com">✉️ Email</a>
@@ -685,23 +698,25 @@
       </div>
     </div>
 
-    <!-- Core Members -->
-    <div class="team-category">Core Members & Researchers</div>
-    <div class="team-grid stagger-children reveal">
-      <div class="member">
-        <img class="avatar" src="./fig/student-1.png" alt="Qian Zhang" />
-        <div class="name">Qian Zhang (Leader)</div>
-        <div class="info">
-          Ph.D. Candidate<br/>Tsinghua SIGS, Tsinghua University<br/>
-          <span class="focus">Focus: Perception & SLAM</span>
-        </div>
-        <div class="links">
-          <a href="mailto:qian.zhang@email.com">✉️ Email</a> | <a href="https://your-homepage.com">🌐 Web</a>
+    <!-- Team leader and postdoc -->
+    <div class="pi-card reveal">
+      <img src="./fig/student-1.png" alt="Dr. Qian Zhang" />
+      <div>
+        <h2>Dr. Qian Zhang</h2>
+        <div class="role">Team Leader / Postdoctoral Researcher</div>
+        <div class="dept">Ph.D. graduate, Tsinghua SIGS, Tsinghua University</div>
+        <div class="details">
+          <strong>Research Focus:</strong> Perception &amp; SLAM
         </div>
       </div>
+    </div>
+
+    <!-- Researchers -->
+    <div class="team-category">Researchers</div>
+    <div class="team-grid stagger-children reveal">
       <div class="member">
         <img class="avatar" src="./fig/student-2.png" alt="Haohua Que" style="object-position: center 20%;" />
-        <div class="name">Haohua Que (Collaborator)</div>
+        <div class="name">Haohua Que</div>
         <div class="info">
           Ph.D. Student<br/>College of Engineering, University of Georgia<br/>
           <span class="focus">Focus: Robotic Control</span>
@@ -721,22 +736,6 @@
           <a href="mailto:intelligent@gaohaojia.top">✉️ Email</a> | <a href="https://gaohaojia.github.io/index.html">🌐 Web</a>
         </div>
       </div>
-      <div class="member">
-        <img class="avatar" src="./fig/student-4.png" alt="Weihao Shan" />
-        <div class="name">Weihao Shan</div>
-        <div class="info">
-          Master Student<br/>Dept. of E.E., Tsinghua University<br/>
-          <span class="focus">Focus: Robotic Chips Design</span>
-        </div>
-        <div class="links">
-          <a href="mailto:student@email.com">✉️ Email</a> | <a href="#">🌐 Web</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Research Interns -->
-    <div class="team-category">Research Interns</div>
-    <div class="team-grid stagger-children reveal">
       <div class="member">
         <img class="avatar" src="./fig/intern-1.png" alt="Mingkai Liu" />
         <div class="name">Mingkai Liu</div>
@@ -815,11 +814,6 @@
           <a href="mailto:Y2399549081@outlook.com">✉️ Email</a> | <a href="https://coralr-1.github.io/">🌐 Web</a>
         </div>
       </div>
-    </div>
-
-    <!-- Undergraduate Interns -->
-    <div class="team-category">Undergraduate Interns</div>
-    <div class="team-grid stagger-children reveal">
       <div class="member">
         <img class="avatar" src="./fig/yifan-zhu.jpeg" alt="Yifan Zhu" />
         <div class="name">Yifan Zhu</div>
@@ -894,16 +888,6 @@
         </div>
       </div>
       <div class="member">
-        <img class="avatar" src="./fig/hang-zhang.jpeg" alt="Hang Zhang" />
-        <div class="name">Hang Zhang</div>
-        <div class="info">
-          Graduate Student<br/>School of Intelligent Manufacturing, Jiangnan University
-        </div>
-        <div class="links">
-          <a href="mailto:3020223157@qq.com">✉️ Email</a> | <a href="https://github.com/Hangyaun">🐙 GitHub</a>
-        </div>
-      </div>
-      <div class="member">
         <img class="avatar" src="./fig/yong-yu.png" alt="Yong Yu" />
         <div class="name">Yong Yu</div>
         <div class="info">
@@ -928,11 +912,23 @@
     <div class="pub-year">Under Review</div>
 
     <div class="pub">
-      <div class="pub-title">DAC-MACE: Dynamic Attention-driven Context Mixture-of-Experts for Large-Scale Visual Relocalization <span class="pub-badge badge-review">Under Review</span></div>
+      <div class="pub-title">SenseSwarm: Swarm Exploration via Neural Structure Estimation with Shared World-Anticipation for Rapid Mapping <span class="pub-badge badge-review">ICRA Under Review</span></div>
     </div>
 
     <div class="pub">
-      <div class="pub-title">SenseExpo: Spatial Exploration and Navigation via Scene Estimation from Expeditious Predictive Updates <span class="pub-badge badge-review">Under Review</span></div>
+      <div class="pub-title">ASPC: Adaptive Sequence-Parallel Collaborative Inference for Resource-Constrained Multi-Robot Exploration <span class="pub-badge badge-review">ICRA Under Review</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">HERO-Explore: Consequence-Aware Collaboration for Heterogeneous Robot Exploration <span class="pub-badge badge-review">ICRA Under Review</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">RC-MRE: Benchmarking Resource Robustness in Multi-Robot Exploration <span class="pub-badge badge-review">ICRA Under Review</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">DAC-MACE: Dynamic Attention-driven Context Mixture-of-Experts for Large-Scale Visual Relocalization <span class="pub-badge badge-review">Under Review</span></div>
     </div>
 
     <div class="pub">
@@ -940,15 +936,7 @@
     </div>
 
     <div class="pub">
-      <div class="pub-title">ACESplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only <span class="pub-badge badge-review">Under Review</span></div>
-    </div>
-
-    <div class="pub">
       <div class="pub-title">Zero-Shot Semantics-enhanced Autonomous Exploration in Complex Unknown Environments <span class="pub-badge badge-review">Under Review</span></div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-title">ST-GRL: Spatiotemporal Cognitive Graph Reinforcement Learning for Multi-Robot Collaborative Exploration <span class="pub-badge badge-review">Under Review</span></div>
     </div>
 
     <div class="pub">
@@ -958,25 +946,45 @@
     <div class="pub-year">2025 / 2026</div>
 
     <div class="pub">
+      <div class="pub-title">SenseExpo: Spatial Exploration and Navigation via Scene Estimation from Expeditious Predictive Updates</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2026</span> (Accepted)</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2503.16000"><img src="fig/papers/senseexpo-2026.jpg" alt="SenseExpo robot exploration and map prediction pipeline" loading="lazy"></a><figcaption>System overview from the <a href="https://arxiv.org/abs/2503.16000">public SenseExpo preprint</a>.</figcaption></figure>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">ACESplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2026</span> (Accepted)</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2606.22091"><img src="fig/papers/acesplat.jpg" alt="ACESplat scene coordinate regression and 3D Gaussian reconstruction pipeline" loading="lazy"></a><figcaption>Pipeline overview from the <a href="https://arxiv.org/abs/2606.22091">public paper</a>.</figcaption></figure>
+    </div>
+
+    <div class="pub">
+      <div class="pub-title">ST-GRL: Spatiotemporal Cognitive Graph Reinforcement Learning for Scalable Multi-Robot Collaborative Exploration</div>
+      <div class="pub-venue"><span class="venue-name">IROS 2026</span> (Accepted)</div>
+      <figure class="pub-figure"><img src="fig/papers/st-grl.png" alt="ST-GRL energy-aware semantic path planning with two robots" loading="lazy"><figcaption>Motivating example from the paper (Fig. 1).</figcaption></figure>
+    </div>
+
+    <div class="pub">
       <div class="pub-title">
         <a href="https://arxiv.org/abs/2510.14251">MACE: Mixture-of-Experts Accelerated Coordinate Encoding for Large-Scale Scene Localization and Rendering</a>
         <span class="pub-badge badge-best">Best Paper, IROS 2025 Workshop</span>
       </div>
       <div class="pub-authors">M. Liu, D. Fan, H. Que, H. Gao, X. Liu, S. Peng, M. Lin, S. Gu, R. Ye, W. Qiu, H. Yao, R. Zhang, X. Huang</div>
       <div class="pub-venue"><span class="venue-name">ICRA 2026</span> (Accepted) &bull; arXiv:2510.14251</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2510.14251"><img src="fig/papers/mace.jpg" alt="MACE localization and rendering pipeline" loading="lazy"></a><figcaption>Pipeline overview from the <a href="https://arxiv.org/abs/2510.14251">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub">
       <div class="pub-title">
-        <a href="#">MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles</a>
+        <a href="https://arxiv.org/abs/2603.27108">MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles</a>
       </div>
       <div class="pub-authors">H. Que, M. Liu, J. Xie, H. Gao, J. Sun, H. Xu, H. Yao, F. Qiao</div>
       <div class="pub-venue"><span class="venue-name">IJCNN 2026</span> (Accepted) &bull; WCCI 2026</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2603.27108"><img src="fig/papers/motimem.jpg" alt="MotiMem motion-aware memory interface for neural perception" loading="lazy"></a><figcaption>System diagram from the <a href="https://arxiv.org/abs/2603.27108">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub">
       <div class="pub-title">
-        <a href="#">Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation</a>
+        <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=EWgqpTgAAAAJ&amp;citation_for_view=EWgqpTgAAAAJ:WF5omc3nYNoC">Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation</a>
       </div>
       <div class="pub-authors">R. Li, Y. Mo, R. Zhao, H. Gao, H. Que, L. Mu</div>
       <div class="pub-venue"><span class="venue-name">IROS 2025</span> &bull; pp. 1847-1854 &bull; IEEE</div>
@@ -988,6 +996,7 @@
       </div>
       <div class="pub-authors">H. Gao, H. Que, K. Li, W. Shan, M. Liu, R. Zhao, L. Mu, X. Yang, Q. Wei, F. Qiao</div>
       <div class="pub-venue"><span class="venue-name">IJCNN 2025</span> &bull; arXiv:2504.04061</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2504.04061"><img src="fig/papers/sensemap.png" alt="SenseMap observation, prediction, and planning pipeline" loading="lazy"></a><figcaption>Pipeline overview from the <a href="https://arxiv.org/abs/2504.04061">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub">
@@ -1021,11 +1030,12 @@
 
     <div class="pub">
       <div class="pub-title">
-        <a href="#">RaP-Net: A Region-wise and Point-wise Weighting Network to Extract Robust Features for Indoor Localization</a>
+        <a href="https://arxiv.org/abs/2012.00234">RaP-Net: A Region-wise and Point-wise Weighting Network to Extract Robust Features for Indoor Localization</a>
         <span class="pub-badge badge-cite">Cited by 8</span>
       </div>
       <div class="pub-authors">D. Li, J. Miao, X. Shi, Y. Tian, Q. Long, T. Cai, P. Guo, H. Yu, W. Yang, H. Yue, Q. Wei, F. Qiao</div>
       <div class="pub-venue"><span class="venue-name">IROS 2021</span> &bull; pp. 1331-1338 &bull; IEEE</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2012.00234"><img src="fig/papers/rap-net.png" alt="RaP-Net feature extraction network architecture" loading="lazy"></a><figcaption>Network architecture from the <a href="https://arxiv.org/abs/2012.00234">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub-year">2020</div>
@@ -1037,15 +1047,17 @@
       </div>
       <div class="pub-authors">D. Li, X. Shi, Q. Long, S. Liu, W. Yang, F. Wang, Q. Wei, F. Qiao</div>
       <div class="pub-venue"><span class="venue-name">IROS 2020</span> &bull; pp. 4958-4965 &bull; IEEE</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/2008.05416"><img src="fig/papers/dxslam.png" alt="DXSLAM visual SLAM system framework" loading="lazy"></a><figcaption>System framework from the <a href="https://arxiv.org/abs/2008.05416">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub">
       <div class="pub-title">
-        <a href="#">Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong SLAM</a>
+        <a href="https://arxiv.org/abs/1911.05603">Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong SLAM</a>
         <span class="pub-badge badge-cite">Cited by 226</span>
       </div>
       <div class="pub-authors">X. Shi, D. Li, P. Zhao, Q. Tian, Y. Tian, Q. Long, C. Zhu, J. Song, F. Qiao, L. Song, Y. Guo, Z. Wang, Y. Zhang, B. Qin, W. Yang, F. Wang, R.H.M. Chan, Q. She</div>
       <div class="pub-venue"><span class="venue-name">ICRA 2020</span> &bull; pp. 3139-3145 &bull; IEEE</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/1911.05603"><img src="fig/papers/openloris.jpg" alt="OpenLORIS scene changes across dataset sequences" loading="lazy"></a><figcaption>Dataset examples from the <a href="https://arxiv.org/abs/1911.05603">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub-year">2019</div>
@@ -1062,11 +1074,12 @@
 
     <div class="pub">
       <div class="pub-title">
-        <a href="#">DS-SLAM: A Semantic Visual SLAM towards Dynamic Environments</a>
+        <a href="https://arxiv.org/abs/1809.08379">DS-SLAM: A Semantic Visual SLAM towards Dynamic Environments</a>
         <span class="pub-badge badge-cite">Cited by 1379</span>
       </div>
       <div class="pub-authors">C. Yu, Z. Liu, X. Liu, F. Xie, Y. Yang, Q. Wei, Q. Fei</div>
       <div class="pub-venue"><span class="venue-name">IROS 2018</span> &bull; pp. 1168-1174 &bull; IEEE</div>
+      <figure class="pub-figure"><a href="https://arxiv.org/abs/1809.08379"><img src="fig/papers/dsslam.png" alt="DS-SLAM semantic visual SLAM system overview" loading="lazy"></a><figcaption>System overview from the <a href="https://arxiv.org/abs/1809.08379">public paper</a>.</figcaption></figure>
     </div>
 
     <div class="pub-year">2017</div>

@@ -148,8 +148,8 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
     </td>
     <td valign="top" style="border: none;">
       <h2 style="margin-top: 0; margin-bottom: 5px;">Dr. Rong Zhao</h2>
-      <b>Postdoctoral Researcher / Lecturer</b><br>
-      Tsinghua University (Postdoc) &amp; North University of China (Lecturer)<br>
+      <b>Lecturer / Former Postdoctoral Researcher</b><br>
+      North University of China (Lecturer) &amp; Tsinghua University (Postdoctoral appointment completed)<br>
       <br>
       🧠 <b>Research Focus:</b> Robot Navigation<br>
       ✉️ <a href="mailto:ZhaoRoy4107@gmail.com">Email Contact</a>
@@ -159,33 +159,33 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
 
 <br/>
 
-### Core Members & Researchers
+<table style="border: 1px solid var(--color-border-muted); background-color: var(--color-canvas-subtle); border-radius: 16px; padding: 20px; width: 95%; margin: auto; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);">
+  <tr>
+    <td align="center" width="200px" valign="top" style="border: none; padding-right: 20px;">
+      <img src="./fig/student-1.png" style="width: 100%; max-width: 180px; height: auto; border-radius: 16px; border: 3px solid #660099; padding: 3px; box-shadow: 0 0 15px rgba(102, 0, 153, 0.4); display: block;" alt="Dr. Qian Zhang"/>
+    </td>
+    <td valign="top" style="border: none;">
+      <h2 style="margin-top: 0; margin-bottom: 5px;">Dr. Qian Zhang</h2>
+      <b>Team Leader / Postdoctoral Researcher</b><br>
+      Ph.D. graduate, Tsinghua SIGS, Tsinghua University<br>
+      <br>
+      🧠 <b>Research Focus:</b> Perception &amp; SLAM
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+### Researchers
 
 <table align="center" style="border: none; width: 100%; margin-top: 20px;">
   <tr>
-    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
-      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/student-1.png" style="width: 200px; height: auto; display: block;" />
-      </div>
-      <br/>
-      <strong style="font-size: 1.1em;">Qian Zhang (Leader)</strong><br/>
-      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-        Ph.D. Candidate<br/>
-        Tsinghua SIGS, Tsinghua University<br/>
-        <span style="color: #660099; font-weight: bold;">Focus:</span> Perception & SLAM
-        <div style="margin-top: 12px; font-size: 1em;">
-          <a href="mailto:qian.zhang@email.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
-          <span style="color: #ccc;">|</span>
-          <a href="https://your-homepage.com" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Personal Homepage">🌐 Web</a>
-        </div>
-      </div>
-    </td>
-    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+    <td align="center" valign="top" width="50%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
           <img src="./fig/student-2.png" style="width: 200px; height: 200px; object-fit: cover; object-position: center 20%; display: block;" />
       </div>
       <br/>
-      <strong style="font-size: 1.1em;">Haohua Que (Collaborator)</strong><br/>
+      <strong style="font-size: 1.1em;">Haohua Que</strong><br/>
       <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
         Ph.D. Student<br/>
         College of Engineering, University of Georgia<br/>
@@ -197,7 +197,7 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
         </div>
       </div>
     </td>
-    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
+    <td align="center" valign="top" width="50%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
           <img src="./fig/student-3.png" style="width: 200px; height: auto; display: block;" />
       </div>
@@ -214,29 +214,7 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
         </div>
       </div>
     </td>
-    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
-      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/student-4.png" style="width: 200px; height: auto; display: block;" />
-      </div>
-      <br/>
-      <strong style="font-size: 1.1em;">Weihao Shan</strong><br/>
-      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-        Master Student<br/>
-        Department of E.E., Tsinghua University<br/>
-        <span style="color: #660099; font-weight: bold;">Focus:</span> Robotic Chips Design
-        <div style="margin-top: 12px; font-size: 1em;">
-          <a href="mailto:student@email.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
-          <span style="color: #ccc;">|</span>
-          <a href="#" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="Personal Homepage">🌐 Web</a>
-        </div>
-      </div>
-    </td>
   </tr>
-</table>
-
-### Research Interns
-
-<table align="center" style="border: none; width: 100%; margin-top: 20px;">
   <tr>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
@@ -359,11 +337,6 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
       </div>
     </td>
   </tr>
-</table>
-
-### Undergraduate Interns
-
-<table align="center" style="border: none; width: 100%; margin-top: 20px;">
   <tr>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
       <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
@@ -480,22 +453,6 @@ Driven by curiosity, united by code. We are a diverse group of researchers.
         </div>
       </div>
     </td>
-    <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
-      <div style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: 0 auto 18px auto; box-shadow: 0 8px 20px rgba(102, 0, 153, 0.3);">
-          <img src="./fig/hang-zhang.jpeg" style="width: 200px; height: auto; display: block;" />
-      </div>
-      <br/>
-      <strong style="font-size: 1.1em;">Hang Zhang</strong><br/>
-      <div style="font-size: 0.9em; color: #555; line-height: 1.6; margin-top: 8px;">
-        Graduate Student<br/>
-        School of Intelligent Manufacturing, Jiangnan University<br/>
-        <div style="margin-top: 12px; font-size: 1em;">
-          <a href="mailto:3020223157@qq.com" style="text-decoration: none; color: #660099; margin-right: 10px;" title="Email">✉️ Email</a>
-          <span style="color: #ccc;">|</span>
-          <a href="https://github.com/Hangyaun" target="_blank" style="text-decoration: none; color: #660099; margin-left: 10px;" title="GitHub">🐙 GitHub</a>
-        </div>
-      </div>
-    </td>
   </tr>
   <tr>
     <td align="center" valign="top" width="25%" style="border: none; padding: 15px;">
@@ -524,37 +481,54 @@ Our research has been published in top-tier robotics and AI venues.
 
 #### Under Review
 
-- **DAC-MACE: Dynamic Attention-driven Context Mixture-of-Experts for Large-Scale Visual Relocalization** `Under Review`
+- **SenseSwarm: Swarm Exploration via Neural Structure Estimation with Shared World-Anticipation for Rapid Mapping** `ICRA Under Review`
 
-- **SenseExpo: Spatial Exploration and Navigation via Scene Estimation from Expeditious Predictive Updates** `Under Review`
+- **ASPC: Adaptive Sequence-Parallel Collaborative Inference for Resource-Constrained Multi-Robot Exploration** `ICRA Under Review`
+
+- **HERO-Explore: Consequence-Aware Collaboration for Heterogeneous Robot Exploration** `ICRA Under Review`
+
+- **RC-MRE: Benchmarking Resource Robustness in Multi-Robot Exploration** `ICRA Under Review`
+
+- **DAC-MACE: Dynamic Attention-driven Context Mixture-of-Experts for Large-Scale Visual Relocalization** `Under Review`
 
 - **GEQ: Geometry-Guided Efficient Quantization for Energy-Aware Automotive Perception** `Under Review`
 
-- **ACESplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only** `Under Review`
-
 - **Zero-Shot Semantics-enhanced Autonomous Exploration in Complex Unknown Environments** `Under Review`
-
-- **ST-GRL: Spatiotemporal Cognitive Graph Reinforcement Learning for Multi-Robot Collaborative Exploration** `Under Review`
 
 - **Kinematic-Aware Improved Hippo Optimization with Laplacian Ironing for Swarm-based Path Planning in Cluttered Environments** `Under Review`
 
 #### 2025 / 2026
 
+- **SenseExpo: Spatial Exploration and Navigation via Scene Estimation from Expeditious Predictive Updates**
+  *IROS 2026 (Accepted)*
+  <br><a href="https://arxiv.org/abs/2503.16000"><img src="../docs/fig/papers/senseexpo-2026.jpg" width="560" alt="SenseExpo system overview"></a><br><sub>Figure from the public SenseExpo preprint.</sub>
+
+- **ACESplat: Accelerated 3D Gaussian Scene Regression via RGB and Poses Only**
+  *IROS 2026 (Accepted)*
+  <br><a href="https://arxiv.org/abs/2606.22091"><img src="../docs/fig/papers/acesplat.jpg" width="560" alt="ACESplat pipeline"></a><br><sub>Figure from the public paper.</sub>
+
+- **ST-GRL: Spatiotemporal Cognitive Graph Reinforcement Learning for Scalable Multi-Robot Collaborative Exploration**
+  *IROS 2026 (Accepted)*
+  <br><img src="../docs/fig/papers/st-grl.png" width="560" alt="ST-GRL energy-aware semantic path planning"><br><sub>Motivating example from the paper (Fig. 1).</sub>
+
 - **MACE: Mixture-of-Experts Accelerated Coordinate Encoding for Large-Scale Scene Localization and Rendering** 🏆 *Best Paper, IROS 2025 Workshop*
   M. Liu, D. Fan, H. Que, H. Gao, X. Liu, S. Peng, M. Lin, S. Gu, R. Ye, W. Qiu, H. Yao, R. Zhang, X. Huang
   *ICRA 2026 (Accepted)* · [arXiv:2510.14251](https://arxiv.org/abs/2510.14251)
+  <br><a href="https://arxiv.org/abs/2510.14251"><img src="../docs/fig/papers/mace.jpg" width="560" alt="MACE pipeline"></a><br><sub>Figure from the public paper.</sub>
 
 - **MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles**
   H. Que, M. Liu, J. Xie, H. Gao, J. Sun, H. Xu, H. Yao, F. Qiao
   *IJCNN 2026 (Accepted)* · WCCI 2026
+  <br><a href="https://arxiv.org/abs/2603.27108"><img src="../docs/fig/papers/motimem.jpg" width="560" alt="MotiMem system diagram"></a><br><sub>Figure from the public paper.</sub>
 
-- **Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation**
+- **[Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=EWgqpTgAAAAJ&citation_for_view=EWgqpTgAAAAJ:WF5omc3nYNoC)**
   R. Li, Y. Mo, R. Zhao, H. Gao, H. Que, L. Mu
   *IROS 2025* · pp. 1847-1854 · IEEE
 
 - **Mapping at First Sense: A Lightweight Neural Network-Based Indoor Structures Prediction Method for Robot Autonomous Exploration**
   H. Gao, H. Que, K. Li, W. Shan, M. Liu, R. Zhao, L. Mu, X. Yang, Q. Wei, F. Qiao
   *IJCNN 2025* · [arXiv:2504.04061](https://arxiv.org/abs/2504.04061)
+  <br><a href="https://arxiv.org/abs/2504.04061"><img src="../docs/fig/papers/sensemap.png" width="560" alt="SenseMap pipeline"></a><br><sub>Figure from the public paper.</sub>
 
 - **SenseExpo: Lightweight Neural Networks for Efficient Autonomous Exploration and Scene Prediction**
   H. Que, H. Gao, M. Liu, H. Au, H. Yao, F. Qiao
@@ -575,16 +549,19 @@ Our research has been published in top-tier robotics and AI venues.
 - **RaP-Net: A Region-wise and Point-wise Weighting Network to Extract Robust Features for Indoor Localization** 📊 *Cited by 8*
   D. Li, J. Miao, X. Shi, Y. Tian, Q. Long, T. Cai, P. Guo, H. Yu, W. Yang, H. Yue, Q. Wei, F. Qiao
   *IROS 2021* · pp. 1331-1338 · IEEE
+  <br><a href="https://arxiv.org/abs/2012.00234"><img src="../docs/fig/papers/rap-net.png" width="560" alt="RaP-Net network architecture"></a><br><sub>Figure from the public paper.</sub>
 
 #### 2020
 
 - **DXSLAM: A Robust and Efficient Visual SLAM System with Deep Features** 📊 *Cited by 193*
   D. Li, X. Shi, Q. Long, S. Liu, W. Yang, F. Wang, Q. Wei, F. Qiao
   *IROS 2020* · pp. 4958-4965 · IEEE
+  <br><a href="https://arxiv.org/abs/2008.05416"><img src="../docs/fig/papers/dxslam.png" width="560" alt="DXSLAM system framework"></a><br><sub>Figure from the public paper.</sub>
 
 - **Are We Ready for Service Robots? The OpenLORIS-Scene Datasets for Lifelong SLAM** 📊 *Cited by 226*
   X. Shi, D. Li, P. Zhao, Q. Tian, Y. Tian, Q. Long, C. Zhu, J. Song, F. Qiao, L. Song, Y. Guo, Z. Wang, Y. Zhang, B. Qin, W. Yang, F. Wang, R.H.M. Chan, Q. She
   *ICRA 2020* · pp. 3139-3145 · IEEE
+  <br><a href="https://arxiv.org/abs/1911.05603"><img src="../docs/fig/papers/openloris.jpg" width="560" alt="OpenLORIS dataset examples"></a><br><sub>Figure from the public paper.</sub>
 
 #### 2019
 
@@ -597,6 +574,7 @@ Our research has been published in top-tier robotics and AI venues.
 - **DS-SLAM: A Semantic Visual SLAM towards Dynamic Environments** 📊 *Cited by 1379*
   C. Yu, Z. Liu, X. Liu, F. Xie, Y. Yang, Q. Wei, Q. Fei
   *IROS 2018* · pp. 1168-1174 · IEEE
+  <br><a href="https://arxiv.org/abs/1809.08379"><img src="../docs/fig/papers/dsslam.png" width="560" alt="DS-SLAM system overview"></a><br><sub>Figure from the public paper.</sub>
 
 #### 2017
 
