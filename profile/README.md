@@ -535,13 +535,15 @@ Our research has been published in top-tier robotics and AI venues.
 
 #### 2022
 
-- **OCTOANTS: A Heterogeneous Lightweight Intelligent Multi-Robot Collaboration System with Resource-Constrained IoT Devices**
+- **[OCTOANTS: A Heterogeneous Lightweight Intelligent Multi-Robot Collaboration System with Resource-Constrained IoT Devices](https://doi.org/10.1109/IROS47612.2022.9982135)**
   Q. Zhang, R. Quan, S. Qimuge, P. Xia, J. Wang, X. Zan, F. Wang, C. Chen, Q. Wei, H. Zhao, X. Liu, F. Qiao
   *IROS 2022* · pp. 2556-2563 · IEEE
+  <br><a href="https://doi.org/10.1109/IROS47612.2022.9982135"><img src="../docs/fig/papers/octoants-2022.png" width="560" alt="OCTOANTS multi-robot mapping system and results"></a><br><sub>Figure 1 from the paper.</sub>
 
-- **On the Way from Lightweight to Powerful Intelligence: A Heterogeneous Multi-Robot Social System with IoT Devices** 📊 *Cited by 2*
+- **[On the Way from Lightweight to Powerful Intelligence: A Heterogeneous Multi-Robot Social System with IoT Devices](https://doi.org/10.1109/CASE49997.2022.9926515)** 📊 *Cited by 2*
   Q. Zhang, R. Quan, S. Qimuge, R. Wei, X. Zan, F. Wang, C. Chen, Q. Wei, X. Liu, F. Qiao
   *CASE 2022* · pp. 842-848 · IEEE
+  <br><a href="https://doi.org/10.1109/CASE49997.2022.9926515"><img src="../docs/fig/papers/multi-robot-social-system-2022.png" width="560" alt="Heterogeneous multi-robot social system architecture"></a><br><sub>Figure 1 from the paper.</sub>
 
 #### 2021
 
