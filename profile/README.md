@@ -491,8 +491,6 @@ Our research has been published in top-tier robotics and AI venues.
 
 - **DAC-MACE: Dynamic Attention-driven Context Mixture-of-Experts for Large-Scale Visual Relocalization** `Under Review`
 
-- **GEQ: Geometry-Guided Efficient Quantization for Energy-Aware Automotive Perception** `Under Review`
-
 - **Zero-Shot Semantics-enhanced Autonomous Exploration in Complex Unknown Environments** `Under Review`
 
 - **Kinematic-Aware Improved Hippo Optimization with Laplacian Ironing for Swarm-based Path Planning in Cluttered Environments** `Under Review`
