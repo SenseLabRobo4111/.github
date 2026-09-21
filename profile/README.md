@@ -566,9 +566,10 @@ Our research has been published in top-tier robotics and AI venues.
 
 #### 2019
 
-- **A DenseNet Feature-Based Loop Closure Method for Visual SLAM System**
+- **[A DenseNet Feature-Based Loop Closure Method for Visual SLAM System](https://doi.org/10.1109/ROBIO49542.2019.8961714)**
   C. Yu, Z. Liu, X. Liu, F. Qiao, Y. Wang, F. Xie, Q. Wei, Y. Yang
   *ROBIO 2019* · pp. 258-265 · IEEE
+  <br><a href="https://doi.org/10.1109/ROBIO49542.2019.8961714"><img src="../docs/fig/papers/dense-loop-2019.png" width="560" alt="Dense-Loop visual SLAM loop closure pipeline"></a><br><sub>Figure 1 from the paper.</sub>
 
 #### 2018
 
@@ -579,9 +580,10 @@ Our research has been published in top-tier robotics and AI venues.
 
 #### 2017
 
-- **Multi-Robot Coordination for High-Speed Pick-and-Place Tasks**
+- **[Multi-Robot Coordination for High-Speed Pick-and-Place Tasks](https://doi.org/10.1109/ROBIO.2017.8324670)**
   C. Yu, X. Liu, F. Qiao, F. Xie
   *ROBIO 2017* · pp. 1743-1750 · IEEE
+  <br><a href="https://doi.org/10.1109/ROBIO.2017.8324670"><img src="../docs/fig/papers/multi-robot-pick-place-2017.png" width="560" alt="Two multi-robot conveyor-belt coordination layouts"></a><br><sub>Figures 3–4 from the paper.</sub>
 
 <br/><hr/><br/>
 
