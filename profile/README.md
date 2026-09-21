@@ -514,7 +514,7 @@ Our research has been published in top-tier robotics and AI venues.
   *ICRA 2026 (Accepted)* · [arXiv:2510.14251](https://arxiv.org/abs/2510.14251)
   <br><a href="https://arxiv.org/abs/2510.14251"><img src="../docs/fig/papers/mace.jpg" width="560" alt="MACE pipeline"></a><br><sub>Figure from the public paper.</sub>
 
-- **MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles**
+- **MotiMem: Motion-Aware Approximate Memory for Energy-Efficient Neural Perception in Autonomous Vehicles** 🏅 *Best Student Paper Nomination*
   H. Que, M. Liu, J. Xie, H. Gao, J. Sun, H. Xu, H. Yao, F. Qiao
   *IJCNN 2026 (Accepted)* · WCCI 2026
   <br><a href="https://arxiv.org/abs/2603.27108"><img src="../docs/fig/papers/motimem.jpg" width="560" alt="MotiMem system diagram"></a><br><sub>Figure from the public paper.</sub>
@@ -522,6 +522,7 @@ Our research has been published in top-tier robotics and AI venues.
 - **[Wireless Collaborative Inference Acceleration Based on Distillation for Weed Detection and Instance Segmentation](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=EWgqpTgAAAAJ&citation_for_view=EWgqpTgAAAAJ:WF5omc3nYNoC)**
   R. Li, Y. Mo, R. Zhao, H. Gao, H. Que, L. Mu
   *IROS 2025* · pp. 1847-1854 · IEEE
+  <br><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11246612"><img src="../docs/fig/papers/wireless-collaborative-inference.png" width="560" alt="Wireless collaborative inference pipeline"></a><br><sub>Figure 1 from the paper.</sub>
 
 - **Mapping at First Sense: A Lightweight Neural Network-Based Indoor Structures Prediction Method for Robot Autonomous Exploration**
   H. Gao, H. Que, K. Li, W. Shan, M. Liu, R. Zhao, L. Mu, X. Yang, Q. Wei, F. Qiao
